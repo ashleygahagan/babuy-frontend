@@ -4,6 +4,8 @@ import Home from "../views/Home.vue";
 import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
 import Logout from "../views/Logout.vue";
+import UsersShow from "../views/users/Show.vue";
+import UsersEdit from "../views/users/Edit.vue";
 
 Vue.use(VueRouter);
 
@@ -27,6 +29,16 @@ const routes = [
     path: "/logout",
     name: "logout",
     component: Logout,
+  },
+  {
+    path: "/users/:id",
+    name: "users-show",
+    component: UsersShow,
+  },
+  {
+    path: "/users/:id/edit",
+    name: "users-edit",
+    component: UsersEdit,
   },
 ];
 
