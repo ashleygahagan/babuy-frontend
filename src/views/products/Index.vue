@@ -1,0 +1,43 @@
+<template>
+  <div class="products-index">
+    <input type="text" v-model="search" placeholder="Search" />
+    <div v-for="product in orderBy(filterBy(products, search), 'created_at', -1)" v-bind:key="product.id">
+      <router-link v-bind:to="`/products/${product.id}`">
+        <img v-if="product.product_images[0]" :src="`${product.product_images[0].url}`" alt="" />
+        <p>{{ product.title }}</p>
+      </router-link>
+      <p>{{ product.category.name }}</p>
+      <p>{{ "$" }}{{ product.price }}</p>
+    </div>
+  </div>
+</template>
+
+<style></style>
+
+<script>
+import axios from "axios";
+import Vue2Filters from "vue2-filters";
+export default {
+  mixins: [Vue2Filters.mixin],
+  data: function () {
+    return {
+      products: [],
+      filter: "",
+      search: "",
+      categoryFilter: "",
+      conditionFilter: "",
+    };
+  },
+  created: function () {
+    this.productsIndex();
+  },
+  methods: {
+    productsIndex: function () {
+      axios.get("/products").then((response) => {
+        console.log(response.data);
+        this.products = response.data;
+      });
+    },
+  },
+};
+</script>

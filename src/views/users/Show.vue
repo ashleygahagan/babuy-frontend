@@ -6,14 +6,15 @@
     <p>Zip: {{ user.zip_code }}</p>
     <!-- Will show edit button only if user is viewing their own profile -->
     <br />
-    <!-- NOT WORKING - NEED TO FIGURE OUT CORRECT PATH TO GET TO EDIT PAGE -->
-    <router-link v-if="$parent.getUserId() == user.id" to="`/users/user.id/edit`" tag="button">
+    <router-link v-if="$parent.getUserId() == user.id" v-bind:to="`/users/${user.id}/edit`" tag="button">
       Edit Profile
     </router-link>
     <br />
+    <br />
+    <h2>{{ "Products:" }}</h2>
     <!-- Displays products that this user has listed -->
     <div v-for="product in user.products" v-bind:key="product.id">
-      <img :src="`${product.product_image}`" alt="" />
+      <img :src="`${product.productImage}`" alt="" />
       <h3>{{ product.title }}</h3>
       <router-link v-bind:to="`/products/${product.id}`" tag="button">See More</router-link>
     </div>

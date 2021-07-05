@@ -1,6 +1,6 @@
 <template>
   <div class="users-edit">
-    <h1>User Edit</h1>
+    <h1>Edit Profile</h1>
 
     <ul>
       <li class="text-danger" v-for="error in errors" v-bind:key="error">
