@@ -1,6 +1,7 @@
 <template>
   <div class="products-index">
     <input type="text" v-model="search" placeholder="Search" />
+    <!-- <button v-="product in orderBy(filterBy(products, 'price'))">Sort by price</button> -->
     <div v-for="product in orderBy(filterBy(products, search), 'created_at', -1)" v-bind:key="product.id">
       <router-link v-bind:to="`/products/${product.id}`">
         <img v-if="product.product_images[0]" :src="`${product.product_images[0].url}`" alt="" />
@@ -9,6 +10,9 @@
       <p>{{ product.category.name }}</p>
       <p>{{ "$" }}{{ product.price }}</p>
     </div>
+    <!-- Button to post a new product -->
+    <br />
+    <router-link v-bind:to="`/products/new`" tag="button">New Product</router-link>
   </div>
 </template>
 
@@ -24,8 +28,6 @@ export default {
       products: [],
       filter: "",
       search: "",
-      categoryFilter: "",
-      conditionFilter: "",
     };
   },
   created: function () {

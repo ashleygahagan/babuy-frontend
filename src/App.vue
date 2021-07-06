@@ -6,6 +6,8 @@
       <router-link to="/products">Products</router-link>
       |
       <span v-if="isLoggedIn()">
+        <router-link :to="`/users/${getUserId()}`">Profile</router-link>
+        |
         <router-link to="/logout">Logout</router-link>
       </span>
       <span v-else>

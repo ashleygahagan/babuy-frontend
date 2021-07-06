@@ -24,8 +24,28 @@
         <input type="checkbox" class="form-control" v-model="newProductParams.trade" />
       </div>
       <div class="form-group">
+        <label>Category:</label>
+        <select v-bind:value="newProductParams.category_id" name="category" v-model="newProductParams.category_id">
+          <option value="1">Strollers</option>
+          <option value="2">Car Seats</option>
+          <option value="3">Furniture</option>
+          <option value="4">Bedding & Decor</option>
+          <option value="5">Nursing & Feeding</option>
+          <option value="6">Toys & Learning</option>
+          <option value="7">Bath & Diapering</option>
+          <option value="8">Clothing & Accessories</option>
+          <option value="9">Health & Safety</option>
+          <option value="10">Maternity</option>
+          <option value="11">Miscellaneous</option>
+        </select>
+      </div>
+      <div class="form-group">
         <label>Condition:</label>
-        <input type="v-model-selec" class="form-control" v-model="newProductParams.condition" />
+        <select v-bind:value="newProductParams.condition" name="condition" v-model="newProductParams.condition">
+          <option value="New">New</option>
+          <option value="Gently Used">Gently Used</option>
+          <option value="Used">Used</option>
+        </select>
       </div>
       <input type="submit" class="btn btn-primary" value="Submit" />
     </form>
@@ -48,7 +68,7 @@ export default {
         .post("/products", this.newProductParams)
         .then((response) => {
           console.log(response.data);
-          this.$router.push(`/products/${this.product.id}/edit`);
+          this.$router.push(`/products/${response.data.id}/edit`);
         })
         .catch((error) => {
           this.errors = error.response.data.errors;
