@@ -1,7 +1,6 @@
 <template>
   <div class="products-edit">
-    <h3>Edit</h3>
-    <p>Please add at least one image below or your listing will not get posted!</p>
+    <h3>Edit Product</h3>
     <ul>
       <li class="text-danger" v-for="error in errors" v-bind:key="error">
         {{ error }}
@@ -52,6 +51,17 @@
       <label>Sold?</label>
       <input type="checkbox" class="form-control" v-model="editProductParams.sold" />
     </div>
+    <p>Please add at least one image below or your listing will not get posted!</p>
+    <div>
+      <input type="text" v-model="newImage" />
+      <button v-on:click="addProductImage(newImage)">Add Image</button>
+    </div>
+    <br />
+    <div v-for="productImage in editProductParams.product_images" v-bind:key="productImage.id" class="form-group">
+      <img v-bind:src="productImage.url" class="form-control" />
+      <button v-on:click="destroyProductImage(productImage)">Delete Image</button>
+    </div>
+    <br />
     <button v-on:click="editProduct">Save Changes</button>
     <button v-on:click="destroyProduct">Delete Product</button>
   </div>
@@ -65,6 +75,7 @@ export default {
       editProductParams: {},
       productImages: [],
       errors: [],
+      newImage: "",
     };
   },
   created: function () {
@@ -75,6 +86,8 @@ export default {
       axios.get(`/products/${this.$route.params.id}`).then((response) => {
         console.log(response.data);
         this.editProductParams = response.data;
+        this.productImages = this.editProductParams.product_images;
+        console.log(this.productImages);
       });
     },
     editProduct: function () {
@@ -103,6 +116,33 @@ export default {
             this.errors = error.response.data.errors;
           });
       }
+    },
+    destroyProductImage: function (picture) {
+      if (confirm("Are you sure you want to delete this image? This action cannot be reversed.")) {
+        axios
+          .delete(`/product_images/${picture.id}`)
+          .then(() => {
+            var index = this.editProductParams.product_images.indexOf(picture);
+            this.editProductParams.product_images.splice(index, 1);
+          })
+          .catch((error) => {
+            this.errors = error.response.data.errors;
+          });
+      }
+    },
+    addProductImage: function (newImage) {
+      var params = {
+        product_id: this.$route.params.id,
+        url: newImage,
+      };
+      axios
+        .post(`/product_images/`, params)
+        .then((response) => {
+          this.editProductParams.product_images.push(response.data);
+        })
+        .catch((error) => {
+          this.errors = error.response.data.errors;
+        });
     },
   },
 };

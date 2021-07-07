@@ -32,7 +32,7 @@ export default {
   data: function () {
     return {
       product: [],
-      productImages: [],
+      // productImages: [],
     };
   },
   created: function () {
