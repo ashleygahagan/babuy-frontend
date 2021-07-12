@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Glass UI - Glassmorphism UI Kit">
+    <meta name="author" content="kingstudio.ro">
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon.png">
+    <!-- Site Title -->
+    <title>Glass UI - Glassmorphism UI Kit</title>
+    <!-- Bootstrap 5 Core CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css" type="text/css">
+</head>
+
+<body>
+
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <div class="container relative">
+        <nav class="navbar navbar-expand-lg navbar-light main-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../assets/images/logo.png" alt=""></a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                    <span class="sr-only">Toggle navigation</span>
+                </button><!-- / navbar-toggler -->
+
+                <div class="collapse navbar-collapse" id="navbar-toggle">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#x" id="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-archive mr-5 fs-14 va-middle"></i> <span class="va-middle">Components</span></a>
+                            <div class="dropdown-menu mega-menu drop-to-center three-columns" aria-labelledby="dropdown">
+                                <div class="row">
+                                    <div class="col-lg-4 sub-menu">
+                                        <a class="dropdown-item" href="../components/base.html"><i class="fas fa-box-open mr-5"></i> <span>Base</span></a>
+                                        <a class="dropdown-item" href="../components/buttons.html"><i class="fas fa-toggle-on mr-5"></i> <span>Buttons</span></a>
+                                        <a class="dropdown-item" href="../components/features.html"><i class="fas fa-star mr-5"></i> <span>Features</span></a>
+                                        <a class="dropdown-item" href="../components/checkbox.html"><i class="fas fa-check-square mr-5"></i> <span>Checkbox</span></a>
+                                    </div><!-- / sub-menu -->
+
+                                    <div class="col-lg-4 sub-menu">
+                                        <a class="dropdown-item" href="../components/accordions.html"><i class="fas fa-bars mr-5"></i> <span>Accordions</span></a>
+                                        <a class="dropdown-item" href="../components/navigations.html"><i class="fas fa-compass mr-5"></i> <span>Navigations</span></a>
+                                        <a class="dropdown-item" href="../components/forms.html"><i class="fas fa-file-alt mr-5"></i> <span>Forms</span></a>
+                                        <a class="dropdown-item" href="../components/cards.html"><i class="fas fa-window-maximize mr-5"></i> <span>Cards</span></a>
+                                    </div><!-- / sub-menu -->
+
+                                    <div class="col-lg-4 sub-menu">
+                                        <a class="dropdown-item" href="../components/promo-box.html"><i class="fas fa-bullhorn mr-5"></i> <span>Promo Box</span></a>
+                                        <a class="dropdown-item" href="../components/pricing-tables.html"><i class="fas fa-dollar-sign mr-5"></i> <span>Pricing Tables</span></a>
+                                        <a class="dropdown-item" href="../components/sliders.html"><i class="fas fa-arrows-alt-h mr-5"></i> <span>Sliders</span></a>
+                                        <a class="dropdown-item" href="../components/widgets.html"><i class="fas fa-window-maximize mr-5"></i> <span>Widgets</span></a>
+                                    </div><!-- / sub-menu -->
+                                </div><!-- / row -->
+                            </div><!-- / dropdown-menu -->
+                        </li><!-- / dropdown -->
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#x" id="dropdown-sections" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-stream mr-5 fs-14 va-middle"></i> <span class="va-middle">Sections</span></a>
+                            <div class="dropdown-menu mega-menu three-columns drop-to-center" aria-labelledby="dropdown-sections">
+                                <div class="row">
+                                    <div class="col-lg-4 sub-menu">
+                                        <a class="dropdown-item" href="headers.html"><i class="fas fa-window-maximize mr-5"></i> <span>Headers</span></a>
+                                        <a class="dropdown-item" href="features.html"><i class="fas fa-star mr-5"></i> <span>Features</span></a>
+                                        <a class="dropdown-item" href="projects.html"><i class="fas fa-briefcase mr-5"></i> <span>Projects</span></a>
+                                        <a class="dropdown-item" href="posts.html"><i class="fas fa-list-alt mr-5"></i> <span>Posts</span></a>
+                                    </div><!-- / sub-menu -->
+
+                                    <div class="col-lg-4 sub-menu">
+                                        <a class="dropdown-item active" href="teams.html"><i class="fas fa-users mr-5"></i> <span>Teams</span></a>
+                                        <a class="dropdown-item" href="testimonials.html"><i class="fas fa-smile mr-5"></i> <span>Testimonials</span></a>
+                                        <a class="dropdown-item" href="pricing.html"><i class="fas fa-dollar-sign mr-5"></i> <span>Pricing</span></a>
+                                        <a class="dropdown-item" href="products.html"><i class="fas fa-tags mr-5"></i> <span>Products</span></a>
+                                    </div><!-- / sub-menu -->
+
+                                    <div class="col-lg-4 sub-menu">
+                                        <a class="dropdown-item" href="parallax.html"><i class="fas fa-window-restore mr-5"></i> <span>Parallax</span></a>
+                                        <a class="dropdown-item" href="videos.html"><i class="fas fa-play-circle mr-5"></i> <span>Videos</span></a>
+                                        <a class="dropdown-item" href="contacts.html"><i class="fas fa-address-card mr-5"></i> <span>Contacts</span></a>
+                                        <a class="dropdown-item" href="footers.html"><i class="fas fa-copyright mr-5"></i> <span>Footers</span></a>
+                                    </div><!-- / sub-menu -->
+                                </div><!-- / row -->
+                            </div><!-- / dropdown-menu -->
+                        </li><!-- / dropdown -->
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#x" id="dropdown-templates" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-images mr-5 fs-14 va-middle"></i> <span class="va-middle">Templates</span></a>
+                            <div class="dropdown-menu mega-menu three-columns drop-to-center" aria-labelledby="dropdown-templates">
+                                <div class="row">
+                                    <div class="col-lg-4 sub-menu">
+                                        <a class="dropdown-item" href="../templates/landing-page.html"><i class="fas fa-images mr-5"></i> <span>Landing Page</span></a>
+                                        <a class="dropdown-item" href="../templates/portfolio.html"><i class="fas fa-th-large mr-5"></i> <span>Portfolio</span></a>
+                                        <a class="dropdown-item" href="../templates/project.html"><i class="fas fa-briefcase mr-5"></i> <span>Project</span></a>
+                                        <a class="dropdown-item" href="../templates/blog.html"><i class="fas fa-list mr-5"></i> <span>Blog</span></a>
+                                    </div><!-- / sub-menu -->
+
+                                    <div class="col-lg-4 sub-menu">
+                                        <a class="dropdown-item" href="../templates/post.html"><i class="fas fa-pencil-alt mr-5"></i> <span>Post</span></a>
+                                        <a class="dropdown-item" href="../templates/ecommerce.html"><i class="fas fa-shopping-cart mr-5"></i> <span>eCommerce</span></a>
+                                        <a class="dropdown-item" href="../templates/product.html"><i class="fas fa-tag mr-5"></i> <span>Product</span></a>
+                                        <a class="dropdown-item" href="../templates/parallax.html"><i class="fas fa-window-restore mr-5"></i> <span>Parallax</span></a>
+                                    </div><!-- / sub-menu -->
+
+                                    <div class="col-lg-4 sub-menu">
+                                        <a class="dropdown-item" href="../templates/resume.html"><i class="fas fa-user-graduate mr-5"></i> <span>Resume</span></a>
+                                        <a class="dropdown-item" href="../templates/404.html"><i class="fas fa-unlink mr-5"></i> <span>404 Page</span></a>
+                                        <a class="dropdown-item" href="../templates/login-register.html"><i class="fas fa-sign-in-alt mr-5"></i> <span>Sign In</span></a>
+                                        <a class="dropdown-item" href="../templates/account.html"><i class="fas fa-user mr-5"></i> <span>Account</span></a>
+                                    </div><!-- / sub-menu -->
+                                </div><!-- / row -->
+                            </div><!-- / dropdown-menu -->
+                        </li><!-- / dropdown -->
+                    </ul><!-- / navbar-nav -->
+
+                    <ul class="navbar-button p-0 m-0 ml-30">
+                        <li class="nav-item">
+                            <a href="https://kingstudio.ro" class="btn btn-gradient-primary" target="_blank"><i class="fas fa-shopping-cart fs-12 mr-5"></i> <span>Buy Now</span></a>
+                        </li>
+                    </ul>
+                </div><!-- / navbar-collapse -->
+            </div><!-- / container-fluid -->
+        </nav><!-- / navbar -->
+    </div><!-- / container -->
+
+    <header class="page-header dark bg-img" style="background-image: url(../assets/images/page-dark.jpg)">
+        <div class="container">
+            <h1 class="page-title mb-15" data-aos="fade-down">Teams</h1>
+            <nav class="breadcrumb p-y-0 p-x-0" data-aos="fade-right">
+                <a class="breadcrumb-item" href="../index.html">Home</a>
+                <a class="breadcrumb-item" href="../sections.html">Sections</a>
+                <span class="breadcrumb-item active">Teams</span>
+            </nav><!-- / bradcrumb -->
+        </div><!-- / container -->
+    </header>
+
+    <div class="main-container">
+        <div class="container">
+            <h6 class="mb-20">3 Column Team</h6>
+        </div><!-- / container -->
+
+        <section class="lg bg-img" style="background-image: url(../assets/images/blur-light.jpg)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card card-w-raised-img-top" data-aos="fade-up">
+                            <div class="card-body text-center">
+                                <img class="card-raised-img-top pos-center mb-20 circle w-50 raised" style="max-width:65%;" src="../assets/images/ph-mini.jpg" alt="">
+                                <h6 class="card-title mb-10">Lucy Walker</h6>
+                                <p class="mb-15 fs-10 fw-regular">UI Designer</p>
+                                <p class="mb-0">
+                                    <a href="#x" class="btn btn-sm btn-facebook btn-circle btn-icon m-5"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#x" class="btn btn-sm btn-twitter btn-circle btn-icon m-5"><i class="fab fa-twitter"></i></a>
+                                    <a href="#x" class="btn btn-sm btn-dribbble btn-circle btn-icon m-5"><i class="fab fa-dribbble"></i></a>
+                                </p>
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-lg-4">
+                        <div class="card card-w-raised-img-top" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-body text-center">
+                                <img class="card-raised-img-top pos-center mb-20 circle w-50 raised" style="max-width:65%;" src="../assets/images/ph-mini.jpg" alt="">
+                                <h6 class="card-title mb-10">Jacob Ginnish</h6>
+                                <p class="mb-15 fs-10 fw-regular">Web Developer</p>
+                                <p class="mb-0">
+                                    <a href="#x" class="btn btn-sm btn-facebook btn-circle btn-icon m-5"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#x" class="btn btn-sm btn-twitter btn-circle btn-icon m-5"><i class="fab fa-twitter"></i></a>
+                                    <a href="#x" class="btn btn-sm btn-dribbble btn-circle btn-icon m-5"><i class="fab fa-dribbble"></i></a>
+                                </p>
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-lg-4">
+                        <div class="card card-w-raised-img-top" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-body text-center">
+                                <img class="card-raised-img-top pos-center mb-20 circle w-50 raised" style="max-width:65%;" src="../assets/images/ph-mini.jpg" alt="">
+                                <h6 class="card-title mb-10">Merida Swan</h6>
+                                <p class="mb-15 fs-10 fw-regular">Web Designer</p>
+                                <p class="mb-0">
+                                    <a href="#x" class="btn btn-sm btn-facebook btn-circle btn-icon m-5"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#x" class="btn btn-sm btn-twitter btn-circle btn-icon m-5"><i class="fab fa-twitter"></i></a>
+                                    <a href="#x" class="btn btn-sm btn-dribbble btn-circle btn-icon m-5"><i class="fab fa-dribbble"></i></a>
+                                </p>
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+                </div><!-- / row -->
+            </div><!-- / container -->
+        </section>
+
+        <div class="spacer-3x">&nbsp;</div>
+
+        <div class="container">
+            <h6 class="mb-20">4 Column Team</h6>
+        </div><!-- / container -->
+
+        <section class="lg bg-img" style="background-image: url(../assets/images/ph-bg.jpg)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card" data-aos="fade-up">
+                            <div class="card-body text-center">
+                                <img class="mb-30 circle raised" style="max-width:50%" src="../assets/images/ph-mini.jpg" alt="">
+                                <p class="mb-5 fs-10 fw-regular">CEO</p>
+                                <h6 class="card-title fw-regular mb-20">Larry Lin</h6>
+                                <a href="#x" class="btn btn-xs btn-success btn-circle btn-icon m-5"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                <a href="#x" class="btn btn-xs btn-twitter btn-circle btn-icon m-5"><i class="fab fa-twitter"></i></a>
+                                <a href="#x" class="btn btn-xs btn-primary btn-circle btn-icon m-5"><i class="fas fa-envelope"></i></a>
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-body text-center">
+                                <img class="mb-30 circle raised" style="max-width:50%" src="../assets/images/ph-mini.jpg" alt="">
+                                <p class="mb-5 fs-10 fw-regular">Designer</p>
+                                <h6 class="card-title fw-regular mb-20">Sophia Perez</h6>
+                                <a href="#x" class="btn btn-xs btn-success btn-circle btn-icon m-5"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                <a href="#x" class="btn btn-xs btn-twitter btn-circle btn-icon m-5"><i class="fab fa-twitter"></i></a>
+                                <a href="#x" class="btn btn-xs btn-primary btn-circle btn-icon m-5"><i class="fas fa-envelope"></i></a>
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-body text-center">
+                                <img class="mb-30 circle raised" style="max-width:50%" src="../assets/images/ph-mini.jpg" alt="">
+                                <p class="mb-5 fs-10 fw-regular">Web Developer</p>
+                                <h6 class="card-title fw-regular mb-20">Jacob Ginnish</h6>
+                                <a href="#x" class="btn btn-xs btn-success btn-circle btn-icon m-5"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                <a href="#x" class="btn btn-xs btn-twitter btn-circle btn-icon m-5"><i class="fab fa-twitter"></i></a>
+                                <a href="#x" class="btn btn-xs btn-primary btn-circle btn-icon m-5"><i class="fas fa-envelope"></i></a>
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-body text-center">
+                                <img class="mb-30 circle raised" style="max-width:50%" src="../assets/images/ph-mini.jpg" alt="">
+                                <p class="mb-5 fs-10 fw-regular">Web Designer</p>
+                                <h6 class="card-title fw-regular mb-20">Merida Swan</h6>
+                                <a href="#x" class="btn btn-xs btn-success btn-circle btn-icon m-5"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                <a href="#x" class="btn btn-xs btn-twitter btn-circle btn-icon m-5"><i class="fab fa-twitter"></i></a>
+                                <a href="#x" class="btn btn-xs btn-primary btn-circle btn-icon m-5"><i class="fas fa-envelope"></i></a>
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+                </div><!-- / row -->
+            </div><!-- / container -->
+        </section>
+
+        <div class="spacer-3x">&nbsp;</div>
+
+        <div class="container">
+            <h6 class="mb-20">3 Column Masonry Team</h6>
+        </div><!-- / container -->
+
+        <section class="lg bg-img" style="background-image: url(../assets/images/blur.jpg)">
+            <div class="container">
+                <div class="row" data-isotope='{ "layoutMode": "masonry" }'>
+                    <div class="col-md-6 col-lg-4 grid-item">
+                        <div class="card" data-aos="fade-up">
+                            <div class="card-body text-center">
+                                <img class="mb-30 rounded raised-sm" style="max-width:60%" src="../assets/images/ph-mini.jpg" alt="">
+                                <p class="mb-5 fs-10 fw-regular">CEO</p>
+                                <h6 class="card-title fw-regular mb-20">Jacob Ginnish</h6>
+                                <p class="mb-0">
+                                    <a href="#x" class="btn btn-xs btn-success btn-icon m-5"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                    <a href="#x" class="btn btn-xs btn-twitter btn-icon m-5"><i class="fab fa-twitter"></i></a>
+                                    <a href="#x" class="btn btn-xs btn-primary btn-icon m-5"><i class="fas fa-envelope"></i></a>
+                                </p>
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-4 grid-item">
+                        <div class="card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-body text-center">
+                                <img class="mb-30 rounded raised-sm" style="max-width:60%" src="../assets/images/ph-mini.jpg" alt="">
+                                <p class="mb-5 fs-10 fw-regular">Designer</p>
+                                <h6 class="card-title fw-regular mb-0">Sophia Perez</h6>
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-4 grid-item">
+                        <div class="card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-body text-center">
+                                <img class="mb-30 rounded raised-sm" style="max-width:60%" src="../assets/images/ph-mini.jpg" alt="">
+                                <p class="mb-5 fs-10 fw-regular">Support</p>
+                                <h6 class="card-title fw-regular mb-20">Larry Lin</h6>
+                                <p class="mb-0">
+                                    <a href="#x" class="btn btn-xs btn-success btn-icon m-5"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                    <a href="#x" class="btn btn-xs btn-primary btn-icon m-5"><i class="fas fa-envelope"></i></a>
+                                </p>
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-4 grid-item">
+                        <div class="card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card-body text-center">
+                                <img class="mb-30 rounded raised-sm" style="max-width:60%" src="../assets/images/ph-mini.jpg" alt="">
+                                <p class="mb-5 fs-10 fw-regular">Advisor</p>
+                                <h6 class="card-title fw-regular mb-20">Harold Adams</h6>
+                                <p class="mb-0">
+                                    <a href="#x" class="btn btn-xs btn-success btn-icon m-5"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                    <a href="#x" class="btn btn-xs btn-twitter btn-icon m-5"><i class="fab fa-twitter"></i></a>
+                                    <a href="#x" class="btn btn-xs btn-primary btn-icon m-5"><i class="fas fa-envelope"></i></a>
+                                </p>
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-4 grid-item">
+                        <div class="card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-body text-center">
+                                <img class="mb-30 rounded raised-sm" style="max-width:60%" src="../assets/images/ph-mini.jpg" alt="">
+                                <p class="mb-5 fs-10 fw-regular">Web Developer</p>
+                                <h6 class="card-title fw-regular mb-0">Aliah Pitts</h6>
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-4 grid-item">
+                        <div class="card" data-aos="fade-up" data-aos-delay="500">
+                            <div class="card-body text-center">
+                                <img class="mb-30 rounded raised-sm" style="max-width:60%" src="../assets/images/ph-mini.jpg" alt="">
+                                <p class="mb-5 fs-10 fw-regular">Marketing</p>
+                                <h6 class="card-title fw-regular mb-0">Dianna Smiley</h6>
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+                </div><!-- / row -->
+            </div><!-- / container -->
+        </section>
+
+        <div class="spacer-3x">&nbsp;</div>
+
+        <div class="container">
+            <h6 class="mb-20">4 Column Masonry Team</h6>
+        </div><!-- / container -->
+
+        <section class="lg bg-img" style="background-image: url(../assets/images/blur-primary.jpg)">
+            <div class="container">
+                <div class="row" data-isotope='{ "layoutMode": "masonry" }'>
+                    <div class="col-md-6 col-xl-3 grid-item">
+                        <div class="card" data-aos="fade-up">
+                            <div class="card-body text-center">
+                                <img class="mb-30 rounded raised-sm" style="max-width:60%" src="../assets/images/ph-mini.jpg" alt="">
+                                <p class="mb-5 fs-10 fw-regular">CEO</p>
+                                <h6 class="card-title fw-regular mb-20">Jacob Ginnish</h6>
+                                <p class="mb-0">
+                                    <a href="#x" class="btn btn-xs btn-success m-5"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                    <a href="#x" class="btn btn-xs btn-primary m-5"><i class="fas fa-envelope"></i></a>
+                                </p>
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-xl-3 grid-item">
+                        <div class="card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-body text-center">
+                                <img class="mb-30 rounded raised-sm" style="max-width:60%" src="../assets/images/ph-mini.jpg" alt="">
+                                <p class="mb-5 fs-10 fw-regular">Designer</p>
+                                <h6 class="card-title fw-regular mb-0">Sophia Perez</h6>
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-xl-3 grid-item">
+                        <div class="card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-body text-center">
+                                <img class="mb-30 rounded raised-sm" style="max-width:60%" src="../assets/images/ph-mini.jpg" alt="">
+                                <p class="mb-5 fs-10 fw-regular">Web Developer</p>
+                                <h6 class="card-title fw-regular mb-0">Aliah Pitts</h6>
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-xl-3 grid-item">
+                        <div class="card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-body text-center">
+                                <img class="mb-30 rounded raised-sm" style="max-width:60%" src="../assets/images/ph-mini.jpg" alt="">
+                                <p class="mb-5 fs-10 fw-regular">Support</p>
+                                <h6 class="card-title fw-regular mb-20">Larry Lin</h6>
+                                <p class="mb-0">
+                                    <a href="#x" class="btn btn-xs btn-success m-5"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                    <a href="#x" class="btn btn-xs btn-primary m-5"><i class="fas fa-envelope"></i></a>
+                                </p>
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-xl-3 grid-item">
+                        <div class="card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card-body text-center">
+                                <img class="mb-30 rounded raised-sm" style="max-width:60%" src="../assets/images/ph-mini.jpg" alt="">
+                                <p class="mb-5 fs-10 fw-regular">Advisor</p>
+                                <h6 class="card-title fw-regular mb-20">Harold Adams</h6>
+                                <p class="mb-0">
+                                    <a href="#x" class="btn btn-xs btn-success m-5"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                    <a href="#x" class="btn btn-xs btn-primary m-5"><i class="fas fa-envelope"></i></a>
+                                </p>
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-xl-3 grid-item">
+                        <div class="card" data-aos="fade-up" data-aos-delay="500">
+                            <div class="card-body text-center">
+                                <img class="mb-30 rounded raised-sm" style="max-width:60%" src="../assets/images/ph-mini.jpg" alt="">
+                                <p class="mb-5 fs-10 fw-regular">PR</p>
+                                <h6 class="card-title fw-regular mb-20">Macy Maher</h6>
+                                <p class="mb-0">
+                                    <a href="#x" class="btn btn-xs btn-success m-5"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                    <a href="#x" class="btn btn-xs btn-primary m-5"><i class="fas fa-envelope"></i></a>
+                                </p>
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-xl-3 grid-item">
+                        <div class="card" data-aos="fade-up" data-aos-delay="600">
+                            <div class="card-body text-center">
+                                <img class="mb-30 rounded raised-sm" style="max-width:60%" src="../assets/images/ph-mini.jpg" alt="">
+                                <p class="mb-5 fs-10 fw-regular">Legal</p>
+                                <h6 class="card-title fw-regular mb-0">Orlando Diggs</h6>
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-xl-3 grid-item">
+                        <div class="card" data-aos="fade-up" data-aos-delay="700">
+                            <div class="card-body text-center">
+                                <img class="mb-30 rounded raised-sm" style="max-width:60%" src="../assets/images/ph-mini.jpg" alt="">
+                                <p class="mb-5 fs-10 fw-regular">Marketing</p>
+                                <h6 class="card-title fw-regular mb-0">Dianna Smiley</h6>
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+                </div><!-- / row -->
+            </div><!-- / container -->
+        </section>
+
+        <div class="spacer-3x">&nbsp;</div>
+
+        <div class="container">
+            <h6 class="mb-20">Team Swiper</h6>
+        </div><!-- / container -->
+
+        <section>
+            <div class="container">
+                <h3 class="section-title hidden text-center mb-60" data-aos="fade-down">Our Team</h3>
+                <div id="team-swiper" class="swiper-container pagination-down">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card no-shadow mb-0">
+                                <div class="card-body">
+                                    <div class="row v-center">
+                                        <div class="col-md-4 grid-item tablet-text-center tablet-top-30">
+                                            <img src="../assets/images/ph-mini.jpg" alt="" class="circle p-5 b-3 border-white raised-xs" style="max-width: 150px;">
+                                        </div><!-- / column -->
+
+                                        <div class="col-md-5 tablet-text-center tablet-top">
+                                            <h5 class="mb-5">Jacob</h5>
+                                            <p class="fs-12 mb-5 text-primary">CEO</p>
+                                            <p class="fs-10 mb-0 opc-50">Office Team</p>
+                                        </div><!-- / column -->
+
+                                        <div class="col-md-3 text-center">
+                                            <div class="row">
+                                                <div class="col-6 col-md-12 tablet-text-right p-x-5 mb-5">
+                                                    <a href="#x" class="btn btn-xs btn-primary btn-circle btn-icon"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                                </div><!-- / column -->
+
+                                                <div class="col-6 col-md-12 tablet-text-left p-x-5">
+                                                    <a href="#x" class="btn btn-xs btn-primary btn-circle btn-icon"><i class="fas fa-envelope"></i></a>
+                                                </div><!-- / column -->
+                                            </div><!-- / row -->
+                                        </div><!-- / column -->
+                                    </div><!-- / row -->
+                                </div><!-- / card-body -->
+                            </div><!-- / card -->
+                        </div><!-- / swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="card no-shadow mb-0">
+                                <div class="card-body">
+                                    <div class="row v-center">
+                                        <div class="col-md-4 grid-item tablet-text-center tablet-top-30">
+                                            <img src="../assets/images/ph-mini.jpg" alt="" class="circle p-5 b-3 border-white raised-xs" style="max-width: 150px;">
+                                        </div><!-- / column -->
+
+                                        <div class="col-md-5 tablet-text-center tablet-top">
+                                            <h5 class="mb-5">Macy</h5>
+                                            <p class="fs-12 mb-5 text-primary">UI Designer</p>
+                                            <p class="fs-10 mb-0 opc-50">UI Dev Team</p>
+                                        </div><!-- / column -->
+
+                                        <div class="col-md-3 text-center">
+                                            <div class="row">
+                                                <div class="col-6 col-md-12 tablet-text-right p-x-5 mb-5">
+                                                    <a href="#x" class="btn btn-xs btn-primary btn-circle btn-icon"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                                </div><!-- / column -->
+
+                                                <div class="col-6 col-md-12 tablet-text-left p-x-5">
+                                                    <a href="#x" class="btn btn-xs btn-primary btn-circle btn-icon"><i class="fas fa-envelope"></i></a>
+                                                </div><!-- / column -->
+                                            </div><!-- / row -->
+                                        </div><!-- / column -->
+                                    </div><!-- / row -->
+                                </div><!-- / card-body -->
+                            </div><!-- / card -->
+                        </div><!-- / swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="card no-shadow mb-0">
+                                <div class="card-body">
+                                    <div class="row v-center">
+                                        <div class="col-md-4 grid-item tablet-text-center tablet-top-30">
+                                            <img src="../assets/images/ph-mini.jpg" alt="" class="circle p-5 b-3 border-white raised-xs" style="max-width: 150px;">
+                                        </div><!-- / column -->
+
+                                        <div class="col-md-5 tablet-text-center tablet-top">
+                                            <h5 class="mb-5">Larry</h5>
+                                            <p class="fs-12 mb-5 text-primary">Web Designer</p>
+                                            <p class="fs-10 mb-0 opc-50">Dev Team</p>
+                                        </div><!-- / column -->
+
+                                        <div class="col-md-3 text-center">
+                                            <div class="row">
+                                                <div class="col-6 col-md-12 tablet-text-right p-x-5 mb-5">
+                                                    <a href="#x" class="btn btn-xs btn-primary btn-circle btn-icon"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                                </div><!-- / column -->
+
+                                                <div class="col-6 col-md-12 tablet-text-left p-x-5">
+                                                    <a href="#x" class="btn btn-xs btn-primary btn-circle btn-icon"><i class="fas fa-envelope"></i></a>
+                                                </div><!-- / column -->
+                                            </div><!-- / row -->
+                                        </div><!-- / column -->
+                                    </div><!-- / row -->
+                                </div><!-- / card-body -->
+                            </div><!-- / card -->
+                        </div><!-- / swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="card no-shadow mb-0">
+                                <div class="card-body">
+                                    <div class="row v-center">
+                                        <div class="col-md-4 grid-item tablet-text-center tablet-top-30">
+                                            <img src="../assets/images/ph-mini.jpg" alt="" class="circle p-5 b-3 border-white raised-xs" style="max-width: 150px;">
+                                        </div><!-- / column -->
+
+                                        <div class="col-md-5 tablet-text-center tablet-top">
+                                            <h5 class="mb-5">Merida</h5>
+                                            <p class="fs-12 mb-5 text-primary">Support</p>
+                                            <p class="fs-10 mb-0 opc-50">Office Team</p>
+                                        </div><!-- / column -->
+
+                                        <div class="col-md-3 text-center">
+                                            <div class="row">
+                                                <div class="col-6 col-md-12 tablet-text-right p-x-5 mb-5">
+                                                    <a href="#x" class="btn btn-xs btn-primary btn-circle btn-icon"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                                </div><!-- / column -->
+
+                                                <div class="col-6 col-md-12 tablet-text-left p-x-5">
+                                                    <a href="#x" class="btn btn-xs btn-primary btn-circle btn-icon"><i class="fas fa-envelope"></i></a>
+                                                </div><!-- / column -->
+                                            </div><!-- / row -->
+                                        </div><!-- / column -->
+                                    </div><!-- / row -->
+                                </div><!-- / card-body -->
+                            </div><!-- / card -->
+                        </div><!-- / swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="card no-shadow mb-0">
+                                <div class="card-body">
+                                    <div class="row v-center">
+                                        <div class="col-md-4 grid-item tablet-text-center tablet-top-30">
+                                            <img src="../assets/images/ph-mini.jpg" alt="" class="circle p-5 b-3 border-white raised-xs" style="max-width: 150px;">
+                                        </div><!-- / column -->
+
+                                        <div class="col-md-5 tablet-text-center tablet-top">
+                                            <h5 class="mb-5">Orlando</h5>
+                                            <p class="fs-12 mb-5 text-primary">Manager</p>
+                                            <p class="fs-10 mb-0 opc-50">UI Dev Team</p>
+                                        </div><!-- / column -->
+
+                                        <div class="col-md-3 text-center">
+                                            <div class="row">
+                                                <div class="col-6 col-md-12 tablet-text-right p-x-5 mb-5">
+                                                    <a href="#x" class="btn btn-xs btn-primary btn-circle btn-icon"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                                </div><!-- / column -->
+
+                                                <div class="col-6 col-md-12 tablet-text-left p-x-5">
+                                                    <a href="#x" class="btn btn-xs btn-primary btn-circle btn-icon"><i class="fas fa-envelope"></i></a>
+                                                </div><!-- / column -->
+                                            </div><!-- / row -->
+                                        </div><!-- / column -->
+                                    </div><!-- / row -->
+                                </div><!-- / card-body -->
+                            </div><!-- / card -->
+                        </div><!-- / swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="card no-shadow mb-0">
+                                <div class="card-body">
+                                    <div class="row v-center">
+                                        <div class="col-md-4 grid-item tablet-text-center tablet-top-30">
+                                            <img src="../assets/images/ph-mini.jpg" alt="" class="circle p-5 b-3 border-white raised-xs" style="max-width: 150px;">
+                                        </div><!-- / column -->
+
+                                        <div class="col-md-5 tablet-text-center tablet-top">
+                                            <h5 class="mb-5">Sophia</h5>
+                                            <p class="fs-12 mb-5 text-primary">Advisor</p>
+                                            <p class="fs-10 mb-0 opc-50">Office Team</p>
+                                        </div><!-- / column -->
+
+                                        <div class="col-md-3 text-center">
+                                            <div class="row">
+                                                <div class="col-6 col-md-12 tablet-text-right p-x-5 mb-5">
+                                                    <a href="#x" class="btn btn-xs btn-primary btn-circle btn-icon"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                                </div><!-- / column -->
+
+                                                <div class="col-6 col-md-12 tablet-text-left p-x-5">
+                                                    <a href="#x" class="btn btn-xs btn-primary btn-circle btn-icon"><i class="fas fa-envelope"></i></a>
+                                                </div><!-- / column -->
+                                            </div><!-- / row -->
+                                        </div><!-- / column -->
+                                    </div><!-- / row -->
+                                </div><!-- / card-body -->
+                            </div><!-- / card -->
+                        </div><!-- / swiper-slide -->
+                    </div><!-- / swiper-wrapper -->
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div><!-- / team-swiper -->
+            </div><!-- / container -->
+        </section>
+
+        <div class="spacer-3x">&nbsp;</div>
+
+        <div class="container">
+            <h6 class="mb-20">Team Swiper 2</h6>
+        </div><!-- / container -->
+
+        <section>
+            <div class="container">
+                <div id="team-swiper-2" class="swiper-container pagination-down">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card no-shadow mb-0">
+                                <div class="card-body text-center">
+                                    <img class="mb-30 rounded raised-sm" style="max-width:60%" src="../assets/images/ph-mini.jpg" alt="">
+                                    <p class="mb-5 fs-10 fw-regular">CEO</p>
+                                    <h6 class="card-title fw-regular mb-20">Merida Swan</h6>
+                                    <p class="mb-0">
+                                        <a href="#x" class="btn btn-xs btn-success m-5"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                        <a href="#x" class="btn btn-xs btn-primary m-5"><i class="fas fa-envelope"></i></a>
+                                    </p>
+                                </div><!-- / card-body -->
+                            </div><!-- / card -->
+                        </div><!-- / swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="card no-shadow mb-0">
+                                <div class="card-body text-center">
+                                    <img class="mb-30 rounded raised-sm" style="max-width:60%" src="../assets/images/ph-mini.jpg" alt="">
+                                    <p class="mb-5 fs-10 fw-regular">Advisor</p>
+                                    <h6 class="card-title fw-regular mb-20">Harold Adams</h6>
+                                    <p class="mb-0">
+                                        <a href="#x" class="btn btn-xs btn-success m-5"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                        <a href="#x" class="btn btn-xs btn-primary m-5"><i class="fas fa-envelope"></i></a>
+                                    </p>
+                                </div><!-- / card-body -->
+                            </div><!-- / card -->
+                        </div><!-- / swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="card no-shadow mb-0">
+                                <div class="card-body text-center">
+                                    <img class="mb-30 rounded raised-sm" style="max-width:60%" src="../assets/images/ph-mini.jpg" alt="">
+                                    <p class="mb-5 fs-10 fw-regular">Marketing</p>
+                                    <h6 class="card-title fw-regular mb-20">Sophia Perez</h6>
+                                    <p class="mb-0">
+                                        <a href="#x" class="btn btn-xs btn-success m-5"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                        <a href="#x" class="btn btn-xs btn-primary m-5"><i class="fas fa-envelope"></i></a>
+                                    </p>
+                                </div><!-- / card-body -->
+                            </div><!-- / card -->
+                        </div><!-- / swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="card no-shadow mb-0">
+                                <div class="card-body text-center">
+                                    <img class="mb-30 rounded raised-sm" style="max-width:60%" src="../assets/images/ph-mini.jpg" alt="">
+                                    <p class="mb-5 fs-10 fw-regular">Designer</p>
+                                    <h6 class="card-title fw-regular mb-20">Larry Lin</h6>
+                                    <p class="mb-0">
+                                        <a href="#x" class="btn btn-xs btn-success m-5"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                        <a href="#x" class="btn btn-xs btn-primary m-5"><i class="fas fa-envelope"></i></a>
+                                    </p>
+                                </div><!-- / card-body -->
+                            </div><!-- / card -->
+                        </div><!-- / swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="card no-shadow mb-0">
+                                <div class="card-body text-center">
+                                    <img class="mb-30 rounded raised-sm" style="max-width:60%" src="../assets/images/ph-mini.jpg" alt="">
+                                    <p class="mb-5 fs-10 fw-regular">Support</p>
+                                    <h6 class="card-title fw-regular mb-20">Macy Maher</h6>
+                                    <p class="mb-0">
+                                        <a href="#x" class="btn btn-xs btn-success m-5"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                        <a href="#x" class="btn btn-xs btn-primary m-5"><i class="fas fa-envelope"></i></a>
+                                    </p>
+                                </div><!-- / card-body -->
+                            </div><!-- / card -->
+                        </div><!-- / swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="card no-shadow mb-0">
+                                <div class="card-body text-center">
+                                    <img class="mb-30 rounded raised-sm" style="max-width:60%" src="../assets/images/ph-mini.jpg" alt="">
+                                    <p class="mb-5 fs-10 fw-regular">Web Developer</p>
+                                    <h6 class="card-title fw-regular mb-20">Orlando Diggs</h6>
+                                    <p class="mb-0">
+                                        <a href="#x" class="btn btn-xs btn-success m-5"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                        <a href="#x" class="btn btn-xs btn-primary m-5"><i class="fas fa-envelope"></i></a>
+                                    </p>
+                                </div><!-- / card-body -->
+                            </div><!-- / card -->
+                        </div><!-- / swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="card no-shadow mb-0">
+                                <div class="card-body text-center">
+                                    <img class="mb-30 rounded raised-sm" style="max-width:60%" src="../assets/images/ph-mini.jpg" alt="">
+                                    <p class="mb-5 fs-10 fw-regular">UI Designer</p>
+                                    <h6 class="card-title fw-regular mb-20">Aliah Pitts</h6>
+                                    <p class="mb-0">
+                                        <a href="#x" class="btn btn-xs btn-success m-5"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                        <a href="#x" class="btn btn-xs btn-primary m-5"><i class="fas fa-envelope"></i></a>
+                                    </p>
+                                </div><!-- / card-body -->
+                            </div><!-- / card -->
+                        </div><!-- / swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="card no-shadow mb-0">
+                                <div class="card-body text-center">
+                                    <img class="mb-30 rounded raised-sm" style="max-width:60%" src="../assets/images/ph-mini.jpg" alt="">
+                                    <p class="mb-5 fs-10 fw-regular">Web Designer</p>
+                                    <h6 class="card-title fw-regular mb-20">Hector Lovett</h6>
+                                    <p class="mb-0">
+                                        <a href="#x" class="btn btn-xs btn-success m-5"><i class="fas fa-phone fa-rotate-90"></i></a>
+                                        <a href="#x" class="btn btn-xs btn-primary m-5"><i class="fas fa-envelope"></i></a>
+                                    </p>
+                                </div><!-- / card-body -->
+                            </div><!-- / card -->
+                        </div><!-- / swiper-slide -->
+                    </div><!-- / swiper-wrapper -->
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div><!-- / team-swiper-2 -->
+            </div><!-- / container -->
+        </section>
+    </div><!-- / main-container -->
+
+    <footer>
+        <div class="container">
+            <div class="row v-center mobile-center">
+                <div class="col-md-4 footer-left-area tablet-top">
+                    <p>© 2021 Glass UI by <a href="https://kingstudio.ro" target="_blank">KingStudio</a></p>
+                </div><!-- / footer-left-area -->
+                <div class="col-md-8 footer-right-area">
+                    <p>
+                        <a href="../index.html" class="text-link mr-15">Home</a>
+                        <a href="../components.html" class="text-link mr-15">Components</a>
+                        <a href="../sections.html" class="text-link mr-15">Sections</a>
+                        <a href="../templates.html" class="text-link">Templates</a>
+                    </p>
+                </div><!-- / footer-right-area -->
+            </div><!-- / row -->
+        </div><!-- / container -->
+    </footer>
+
+    <!-- Core JavaScript -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/theme.js"></script>
+    <!-- / Core JavaScript -->
+
+    <!-- aos -->
+    <script src="../assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+          duration: 1200,
+        })
+    </script>
+    <!-- / aos -->
+
+    <!-- Isotope -->
+    <script src="../assets/js/isotope.min.js"></script>
+    <!-- / Isotope -->
+
+    <!-- Swiper Slider -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('#team-swiper', {
+          slidesPerView: 3,
+          spaceBetween: 15,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          breakpoints: {
+            '@0.5': {
+              slidesPerView: 1,
+            },
+            '@0.75': {
+              slidesPerView: 2,
+            },
+            '@1.00': {
+              slidesPerView: 3,
+            },
+          }
+        });
+
+        var swiper = new Swiper('#team-swiper-2', {
+          slidesPerView: 3,
+          spaceBetween: 15,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          breakpoints: {
+            '@0.5': {
+              slidesPerView: 1,
+            },
+            '@0.75': {
+              slidesPerView: 2,
+            },
+            '@1.00': {
+              slidesPerView: 3,
+            },
+          }
+        });
+    </script><!-- / swiper-init -->
+    <!-- / Swiper Slider -->
+    
+</body>
+</html>

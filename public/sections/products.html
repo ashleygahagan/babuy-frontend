@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Glass UI - Glassmorphism UI Kit">
+    <meta name="author" content="kingstudio.ro">
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon.png">
+    <!-- Site Title -->
+    <title>Glass UI - Glassmorphism UI Kit</title>
+    <!-- Bootstrap 5 Core CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css" type="text/css">
+</head>
+
+<body>
+
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <div class="container relative">
+        <nav class="navbar navbar-expand-lg navbar-light main-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../assets/images/logo.png" alt=""></a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                    <span class="sr-only">Toggle navigation</span>
+                </button><!-- / navbar-toggler -->
+
+                <div class="collapse navbar-collapse" id="navbar-toggle">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#x" id="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-archive mr-5 fs-14 va-middle"></i> <span class="va-middle">Components</span></a>
+                            <div class="dropdown-menu mega-menu drop-to-center three-columns" aria-labelledby="dropdown">
+                                <div class="row">
+                                    <div class="col-lg-4 sub-menu">
+                                        <a class="dropdown-item" href="../components/base.html"><i class="fas fa-box-open mr-5"></i> <span>Base</span></a>
+                                        <a class="dropdown-item" href="../components/buttons.html"><i class="fas fa-toggle-on mr-5"></i> <span>Buttons</span></a>
+                                        <a class="dropdown-item" href="../components/features.html"><i class="fas fa-star mr-5"></i> <span>Features</span></a>
+                                        <a class="dropdown-item" href="../components/checkbox.html"><i class="fas fa-check-square mr-5"></i> <span>Checkbox</span></a>
+                                    </div><!-- / sub-menu -->
+
+                                    <div class="col-lg-4 sub-menu">
+                                        <a class="dropdown-item" href="../components/accordions.html"><i class="fas fa-bars mr-5"></i> <span>Accordions</span></a>
+                                        <a class="dropdown-item" href="../components/navigations.html"><i class="fas fa-compass mr-5"></i> <span>Navigations</span></a>
+                                        <a class="dropdown-item" href="../components/forms.html"><i class="fas fa-file-alt mr-5"></i> <span>Forms</span></a>
+                                        <a class="dropdown-item" href="../components/cards.html"><i class="fas fa-window-maximize mr-5"></i> <span>Cards</span></a>
+                                    </div><!-- / sub-menu -->
+
+                                    <div class="col-lg-4 sub-menu">
+                                        <a class="dropdown-item" href="../components/promo-box.html"><i class="fas fa-bullhorn mr-5"></i> <span>Promo Box</span></a>
+                                        <a class="dropdown-item" href="../components/pricing-tables.html"><i class="fas fa-dollar-sign mr-5"></i> <span>Pricing Tables</span></a>
+                                        <a class="dropdown-item" href="../components/sliders.html"><i class="fas fa-arrows-alt-h mr-5"></i> <span>Sliders</span></a>
+                                        <a class="dropdown-item" href="../components/widgets.html"><i class="fas fa-window-maximize mr-5"></i> <span>Widgets</span></a>
+                                    </div><!-- / sub-menu -->
+                                </div><!-- / row -->
+                            </div><!-- / dropdown-menu -->
+                        </li><!-- / dropdown -->
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#x" id="dropdown-sections" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-stream mr-5 fs-14 va-middle"></i> <span class="va-middle">Sections</span></a>
+                            <div class="dropdown-menu mega-menu three-columns drop-to-center" aria-labelledby="dropdown-sections">
+                                <div class="row">
+                                    <div class="col-lg-4 sub-menu">
+                                        <a class="dropdown-item" href="headers.html"><i class="fas fa-window-maximize mr-5"></i> <span>Headers</span></a>
+                                        <a class="dropdown-item" href="features.html"><i class="fas fa-star mr-5"></i> <span>Features</span></a>
+                                        <a class="dropdown-item" href="projects.html"><i class="fas fa-briefcase mr-5"></i> <span>Projects</span></a>
+                                        <a class="dropdown-item" href="posts.html"><i class="fas fa-list-alt mr-5"></i> <span>Posts</span></a>
+                                    </div><!-- / sub-menu -->
+
+                                    <div class="col-lg-4 sub-menu">
+                                        <a class="dropdown-item" href="teams.html"><i class="fas fa-users mr-5"></i> <span>Teams</span></a>
+                                        <a class="dropdown-item" href="testimonials.html"><i class="fas fa-smile mr-5"></i> <span>Testimonials</span></a>
+                                        <a class="dropdown-item" href="pricing.html"><i class="fas fa-dollar-sign mr-5"></i> <span>Pricing</span></a>
+                                        <a class="dropdown-item active" href="products.html"><i class="fas fa-tags mr-5"></i> <span>Products</span></a>
+                                    </div><!-- / sub-menu -->
+
+                                    <div class="col-lg-4 sub-menu">
+                                        <a class="dropdown-item" href="parallax.html"><i class="fas fa-window-restore mr-5"></i> <span>Parallax</span></a>
+                                        <a class="dropdown-item" href="videos.html"><i class="fas fa-play-circle mr-5"></i> <span>Videos</span></a>
+                                        <a class="dropdown-item" href="contacts.html"><i class="fas fa-address-card mr-5"></i> <span>Contacts</span></a>
+                                        <a class="dropdown-item" href="footers.html"><i class="fas fa-copyright mr-5"></i> <span>Footers</span></a>
+                                    </div><!-- / sub-menu -->
+                                </div><!-- / row -->
+                            </div><!-- / dropdown-menu -->
+                        </li><!-- / dropdown -->
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#x" id="dropdown-templates" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-images mr-5 fs-14 va-middle"></i> <span class="va-middle">Templates</span></a>
+                            <div class="dropdown-menu mega-menu three-columns drop-to-center" aria-labelledby="dropdown-templates">
+                                <div class="row">
+                                    <div class="col-lg-4 sub-menu">
+                                        <a class="dropdown-item" href="../templates/landing-page.html"><i class="fas fa-images mr-5"></i> <span>Landing Page</span></a>
+                                        <a class="dropdown-item" href="../templates/portfolio.html"><i class="fas fa-th-large mr-5"></i> <span>Portfolio</span></a>
+                                        <a class="dropdown-item" href="../templates/project.html"><i class="fas fa-briefcase mr-5"></i> <span>Project</span></a>
+                                        <a class="dropdown-item" href="../templates/blog.html"><i class="fas fa-list mr-5"></i> <span>Blog</span></a>
+                                    </div><!-- / sub-menu -->
+
+                                    <div class="col-lg-4 sub-menu">
+                                        <a class="dropdown-item" href="../templates/post.html"><i class="fas fa-pencil-alt mr-5"></i> <span>Post</span></a>
+                                        <a class="dropdown-item" href="../templates/ecommerce.html"><i class="fas fa-shopping-cart mr-5"></i> <span>eCommerce</span></a>
+                                        <a class="dropdown-item" href="../templates/product.html"><i class="fas fa-tag mr-5"></i> <span>Product</span></a>
+                                        <a class="dropdown-item" href="../templates/parallax.html"><i class="fas fa-window-restore mr-5"></i> <span>Parallax</span></a>
+                                    </div><!-- / sub-menu -->
+
+                                    <div class="col-lg-4 sub-menu">
+                                        <a class="dropdown-item" href="../templates/resume.html"><i class="fas fa-user-graduate mr-5"></i> <span>Resume</span></a>
+                                        <a class="dropdown-item" href="../templates/404.html"><i class="fas fa-unlink mr-5"></i> <span>404 Page</span></a>
+                                        <a class="dropdown-item" href="../templates/login-register.html"><i class="fas fa-sign-in-alt mr-5"></i> <span>Sign In</span></a>
+                                        <a class="dropdown-item" href="../templates/account.html"><i class="fas fa-user mr-5"></i> <span>Account</span></a>
+                                    </div><!-- / sub-menu -->
+                                </div><!-- / row -->
+                            </div><!-- / dropdown-menu -->
+                        </li><!-- / dropdown -->
+                    </ul><!-- / navbar-nav -->
+
+                    <ul class="navbar-button p-0 m-0 ml-30">
+                        <li class="nav-item">
+                            <a href="https://kingstudio.ro" class="btn btn-gradient-primary" target="_blank"><i class="fas fa-shopping-cart fs-12 mr-5"></i> <span>Buy Now</span></a>
+                        </li>
+                    </ul>
+                </div><!-- / navbar-collapse -->
+            </div><!-- / container-fluid -->
+        </nav><!-- / navbar -->
+    </div><!-- / container -->
+
+    <header class="page-header dark bg-img" style="background-image: url(../assets/images/page-dark.jpg)">
+        <div class="container">
+            <h1 class="page-title mb-15" data-aos="fade-down">Products</h1>
+            <nav class="breadcrumb p-y-0 p-x-0" data-aos="fade-right">
+                <a class="breadcrumb-item" href="../index.html">Home</a>
+                <a class="breadcrumb-item" href="../sections.html">Sections</a>
+                <span class="breadcrumb-item active">Products</span>
+            </nav><!-- / bradcrumb -->
+        </div><!-- / container -->
+    </header>
+
+    <div class="main-container">
+        <div class="container">
+            <h6 class="mb-20">2 Column Products</h6>
+        </div><!-- / container -->
+
+        <section class="lg bg-img" style="background-image: url(../assets/images/blur.jpg)">
+            <div class="container">
+                <h3 class="section-title hidden text-center mb-60" data-aos="fade-down">Our Products</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card card-w-raised-img-top" data-aos="fade-up">
+                            <div class="card-body">
+                                <img class="card-raised-img-top rounded mb-30" src="../assets/images/ph-square.jpg" alt="">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Black Tee</a> <span class="price-inline title-color">$29.99</span></p>
+                                <p><a href="#x" class="card-text mt-5 title-link">Men's</a></p>
+                                <p class="mb-20 mt-15">Donec id turpis urna. Donec vel ipsum erat. In accumsan purus eget imperdiet imperdiet. Aenean sit amet erat ut augue semper blandit.</p>
+                                <a href="#x" class="btn btn-sm btn-primary pill"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                <div class="product-card-footer">
+                                    <p class="btn-inline fw-regular mt-20 mb-0"><a href="#x"><i class="far fa-heart fs-24 text-danger"></i></a> <span class="text-danger fw-bold">12</span></p>
+                                </div><!-- / product-cart-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6">
+                        <div class="card card-w-raised-img-top" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-body">
+                                <img class="card-raised-img-top rounded mb-30" src="../assets/images/ph-square.jpg" alt="">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Smart Watch</a> <span class="price-inline title-color">$199.99</span></p>
+                                <p><a href="#x" class="card-text mt-5 title-link">Accessories</a></p>
+                                <p class="mb-20 mt-15">Donec id turpis urna. Donec vel ipsum erat. In accumsan purus eget imperdiet imperdiet. Aenean sit amet erat ut augue semper blandit.</p>
+                                <a href="#x" class="btn btn-sm btn-primary pill"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                <div class="product-card-footer">
+                                    <p class="btn-inline fw-regular mt-20 mb-0"><a href="#x"><i class="fas fa-heart fs-24 text-danger"></i></a> <span class="text-danger fw-bold">47</span></p>
+                                </div><!-- / product-cart-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6">
+                        <div class="card card-w-raised-img-top" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-body">
+                                <img class="card-raised-img-top rounded mb-30" src="../assets/images/ph-square.jpg" alt="">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Blue Tee</a> <span class="price-inline title-color">$19.99</span></p>
+                                <p><a href="#x" class="card-text mt-5 title-link">Women's</a></p>
+                                <p class="mb-20 mt-15">Donec id turpis urna. Donec vel ipsum erat. In accumsan purus eget imperdiet imperdiet. Aenean sit amet erat ut augue semper blandit.</p>
+                                <a href="#x" class="btn btn-sm btn-primary pill"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                <div class="product-card-footer">
+                                    <p class="btn-inline fw-regular mt-20 mb-0"><a href="#x"><i class="fas fa-heart fs-24 text-danger"></i></a> <span class="text-danger fw-bold">23</span></p>
+                                </div><!-- / product-cart-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6">
+                        <div class="card card-w-raised-img-top" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-body">
+                                <img class="card-raised-img-top rounded mb-30" src="../assets/images/ph-square.jpg" alt="">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Running Shoes</a> <span class="price-inline title-color">$89.99</span></p>
+                                <p><a href="#x" class="card-text mt-5 title-link">Men's</a></p>
+                                <p class="mb-20 mt-15">Donec id turpis urna. Donec vel ipsum erat. In accumsan purus eget imperdiet imperdiet. Aenean sit amet erat ut augue semper blandit.</p>
+                                <a href="#x" class="btn btn-sm btn-primary pill"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                <div class="product-card-footer">
+                                    <p class="btn-inline fw-regular mt-20 mb-0"><a href="#x"><i class="far fa-heart fs-24 text-danger"></i></a> <span class="text-danger fw-bold">7</span></p>
+                                </div><!-- / product-cart-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+                </div><!-- / row -->
+            </div><!-- / container -->
+        </section>
+
+        <div class="spacer-3x">&nbsp;</div>
+
+        <div class="container">
+            <h6 class="mb-20">3 Column Products</h6>
+        </div><!-- / container -->
+
+        <section class="lg bg-img" style="background-image: url(../assets/images/blur-primary.jpg)">
+            <div class="container">
+                <h3 class="section-title hidden text-center mb-60" data-aos="fade-down">Latest Products</h3>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card" data-aos="fade-up">
+                            <div class="card-body p-y-30">
+                                <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Black Tee</a> <span class="price-inline title-color">$29.99</span></p>
+                                <p><a href="#x" class="card-text mt-5 title-link">Men's</a></p>
+                                <p class="ratings mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                <div class="product-card-footer">
+                                    <a href="#x" class="btn btn-xs btn-primary btn-inline mt-10"><i class="fas fa-shopping-cart mr-5"></i> <span>Buy Now</span></a>
+                                </div><!-- / product-card-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-body p-y-30">
+                                <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Smart Watch</a> <span class="price-inline title-color">$199.99</span></p>
+                                <p><a href="#x" class="card-text mt-5 title-link">Accessories</a></p>
+                                <p class="ratings mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                <div class="product-card-footer">
+                                    <a href="#x" class="btn btn-xs btn-primary btn-inline mt-10"><i class="fas fa-shopping-cart mr-5"></i> <span>Buy Now</span></a>
+                                </div><!-- / product-card-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-body p-y-30">
+                                <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Blue Tee</a> <span class="price-inline title-color">$19.99</span></p>
+                                <p><a href="#x" class="card-text mt-5 title-link">Women's</a></p>
+                                <p class="ratings mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                <div class="product-card-footer">
+                                    <a href="#x" class="btn btn-xs btn-primary btn-inline mt-10"><i class="fas fa-shopping-cart mr-5"></i> <span>Buy Now</span></a>
+                                </div><!-- / product-card-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-body p-y-30">
+                                <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">LT Bag</a> <span class="price-inline title-color">$49.99</span></p>
+                                <p><a href="#x" class="card-text mt-5 title-link">Women's</a></p>
+                                <p class="ratings mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                <div class="product-card-footer">
+                                    <a href="#x" class="btn btn-xs btn-primary btn-inline mt-10"><i class="fas fa-shopping-cart mr-5"></i> <span>Buy Now</span></a>
+                                </div><!-- / product-card-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card-body p-y-30">
+                                <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Running Shoes</a> <span class="price-inline title-color">$89.99</span></p>
+                                <p><a href="#x" class="card-text mt-5 title-link">Men's</a></p>
+                                <p class="ratings mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                <div class="product-card-footer">
+                                    <a href="#x" class="btn btn-xs btn-primary btn-inline mt-10"><i class="fas fa-shopping-cart mr-5"></i> <span>Buy Now</span></a>
+                                </div><!-- / product-card-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card" data-aos="fade-up" data-aos-delay="500">
+                            <div class="card-body p-y-30">
+                                <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">CL Watch</a> <span class="price-inline title-color">$99.99</span></p>
+                                <p><a href="#x" class="card-text mt-5 title-link">Accessories</a></p>
+                                <p class="ratings mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                <div class="product-card-footer">
+                                    <a href="#x" class="btn btn-xs btn-primary btn-inline mt-10"><i class="fas fa-shopping-cart mr-5"></i> <span>Buy Now</span></a>
+                                </div><!-- / product-card-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+                </div><!-- / row -->
+            </div><!-- / container -->
+        </section>
+
+        <div class="spacer-3x">&nbsp;</div>
+
+        <div class="container">
+            <h6 class="mb-20">4 Column Products</h6>
+        </div><!-- / container -->
+
+        <section class="lg bg-img" style="background-image: url(../assets/images/blur-light.jpg)">
+            <div class="container">
+                <h3 class="section-title hidden text-center mb-60" data-aos="fade-down">New Arrivals</h3>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card" data-aos="fade-up">
+                            <div class="card-body text-center p-y-30">
+                                <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Hoodie</a></p>
+                                <p class="price-block fw-bold text-primary">$49.99</p>
+                                <p class="ratings fs-10 mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                <div class="product-card-footer">
+                                    <a href="#x" class="btn btn-sm btn-primary btn-block mt-15"><i class="fas fa-shopping-cart mr-5"></i> <span>Buy Now</span></a>
+                                </div><!-- / product-card-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-body text-center p-y-30">
+                                <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">CL Watch</a></p>
+                                <p class="price-block fw-bold text-primary">$99.99</p>
+                                <p class="ratings fs-10 mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                <div class="product-card-footer">
+                                    <a href="#x" class="btn btn-sm btn-primary btn-block mt-15"><i class="fas fa-shopping-cart mr-5"></i> <span>Buy Now</span></a>
+                                </div><!-- / product-card-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-body text-center p-y-30">
+                                <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Black Tee</a></p>
+                                <p class="price-block fw-bold text-primary">$29.99</p>
+                                <p class="ratings fs-10 mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                <div class="product-card-footer">
+                                    <a href="#x" class="btn btn-sm btn-primary btn-block mt-15"><i class="fas fa-shopping-cart mr-5"></i> <span>Buy Now</span></a>
+                                </div><!-- / product-card-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-body text-center p-y-30">
+                                <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Smart Watch</a></p>
+                                <p class="price-block fw-bold text-primary">$199.99</p>
+                                <p class="ratings fs-10 mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                <div class="product-card-footer">
+                                    <a href="#x" class="btn btn-sm btn-primary btn-block mt-15"><i class="fas fa-shopping-cart mr-5"></i> <span>Buy Now</span></a>
+                                </div><!-- / product-card-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card-body text-center p-y-30">
+                                <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">LT Bag</a></p>
+                                <p class="price-block fw-bold text-primary">$49.99</p>
+                                <p class="ratings fs-10 mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                <div class="product-card-footer">
+                                    <a href="#x" class="btn btn-sm btn-primary btn-block mt-15"><i class="fas fa-shopping-cart mr-5"></i> <span>Buy Now</span></a>
+                                </div><!-- / product-card-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card" data-aos="fade-up" data-aos-delay="500">
+                            <div class="card-body text-center p-y-30">
+                                <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Sneakers</a></p>
+                                <p class="price-block fw-bold text-primary">$89.99</p>
+                                <p class="ratings fs-10 mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                <div class="product-card-footer">
+                                    <a href="#x" class="btn btn-sm btn-primary btn-block mt-15"><i class="fas fa-shopping-cart mr-5"></i> <span>Buy Now</span></a>
+                                </div><!-- / product-card-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card" data-aos="fade-up" data-aos-delay="600">
+                            <div class="card-body text-center p-y-30">
+                                <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Blue Tee</a></p>
+                                <p class="price-block fw-bold text-primary">$19.99</p>
+                                <p class="ratings fs-10 mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                <div class="product-card-footer">
+                                    <a href="#x" class="btn btn-sm btn-primary btn-block mt-15"><i class="fas fa-shopping-cart mr-5"></i> <span>Buy Now</span></a>
+                                </div><!-- / product-card-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card" data-aos="fade-up" data-aos-delay="700">
+                            <div class="card-body text-center p-y-30">
+                                <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Black Cap</a></p>
+                                <p class="price-block fw-bold text-primary">$39.99</p>
+                                <p class="ratings fs-10 mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                <div class="product-card-footer">
+                                    <a href="#x" class="btn btn-sm btn-primary btn-block mt-15"><i class="fas fa-shopping-cart mr-5"></i> <span>Buy Now</span></a>
+                                </div><!-- / product-card-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+                </div><!-- / row -->
+            </div><!-- / container -->
+        </section>
+
+        <div class="spacer-3x">&nbsp;</div>
+
+        <div class="container">
+            <h6 class="mb-20">3 Column Masonry Products</h6>
+        </div><!-- / container -->
+
+        <section class="lg bg-img" style="background-image: url(../assets/images/ph-bg.jpg)">
+            <div class="container">
+                <h3 class="section-title hidden text-center mb-60" data-aos="fade-down">Our Products</h3>
+                <div class="row" data-isotope='{ "layoutMode": "masonry" }'>
+                    <div class="col-md-6 col-lg-4 grid-item">
+                        <div class="card card-w-raised-img-top" data-aos="fade-up">
+                            <div class="card-body">
+                                <img class="card-raised-img-top rounded mb-30" src="../assets/images/ph-square.jpg" alt="">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Black Tee</a> <span class="price-inline title-color">$29.99</span></p>
+                                <p><a href="#x" class="card-text mt-5 title-link">Men's</a></p>
+                                <p class="mb-20 mt-15">Donec commodo sempera ipsum. Cras ut placerat arcu quis laoreet mi lacinia.</p>
+                                <a href="#x" class="btn btn-sm btn-primary pill"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                <div class="product-card-footer">
+                                    <p class="btn-inline fw-regular mt-20 mb-0"><a href="#x"><i class="far fa-heart fs-24 text-danger"></i></a> <span class="text-danger fw-bold">12</span></p>
+                                </div><!-- / product-cart-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-4 grid-item">
+                        <div class="card card-w-raised-img-top" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-body">
+                                <img class="card-raised-img-top rounded mb-30" src="../assets/images/ph-square.jpg" alt="">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Smart Watch</a> <span class="price-inline title-color">$199.99</span></p>
+                                <p><a href="#x" class="card-text mt-5 title-link">Accessories</a></p>
+                                <p class="mb-20 mt-15">Praesent ornare ultricies arcu, in faucibus arcu ullamcorper in. Nunc pretium mollis ligula ut molestie. Nulla a sodales ipsum.</p>
+                                <a href="#x" class="btn btn-sm btn-primary pill"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                <div class="product-card-footer">
+                                    <p class="btn-inline fw-regular mt-20 mb-0"><a href="#x"><i class="fas fa-heart fs-24 text-danger"></i></a> <span class="text-danger fw-bold">47</span></p>
+                                </div><!-- / product-cart-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-4 grid-item">
+                        <div class="card card-w-raised-img-top" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-body">
+                                <img class="card-raised-img-top rounded mb-30" src="../assets/images/ph-square.jpg" alt="">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Blue Tee</a> <span class="price-inline title-color">$19.99</span></p>
+                                <p><a href="#x" class="card-text mt-5 title-link">Women's</a></p>
+                                <p class="mb-20 mt-15">Cras porttitor sapien gravida.</p>
+                                <a href="#x" class="btn btn-sm btn-primary pill"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                <div class="product-card-footer">
+                                    <p class="btn-inline fw-regular mt-20 mb-0"><a href="#x"><i class="fas fa-heart fs-24 text-danger"></i></a> <span class="text-danger fw-bold">23</span></p>
+                                </div><!-- / product-cart-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-4 grid-item">
+                        <div class="card card-w-raised-img-top" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-body">
+                                <img class="card-raised-img-top rounded mb-30" src="../assets/images/ph-square.jpg" alt="">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Running Shoes</a> <span class="price-inline title-color">$89.99</span></p>
+                                <p><a href="#x" class="card-text mt-5 title-link">Men's</a></p>
+                                <p class="mb-20 mt-15">Praesent ornare ultricies arcu, in faucibus arcu ullamcorper in. Nunc pretium mollis ligula ut molestie. Nulla a sodales ipsum. Cras porttitor sapien gravida pharetra.</p>
+                                <a href="#x" class="btn btn-sm btn-primary pill"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                <div class="product-card-footer">
+                                    <p class="btn-inline fw-regular mt-20 mb-0"><a href="#x"><i class="far fa-heart fs-24 text-danger"></i></a> <span class="text-danger fw-bold">7</span></p>
+                                </div><!-- / product-cart-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-4 grid-item">
+                        <div class="card card-w-raised-img-top" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card-body">
+                                <img class="card-raised-img-top rounded mb-30" src="../assets/images/ph-square.jpg" alt="">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">LT Bag</a> <span class="price-inline title-color">$49.99</span></p>
+                                <p><a href="#x" class="card-text mt-5 title-link">Women's</a></p>
+                                <p class="mb-20 mt-15">Praesent ornare ultricies arcu, in faucibus arcu ullamcorper in. Nunc pretium mollis ligula ut molestie. Nulla a sodales ipsum.</p>
+                                <a href="#x" class="btn btn-sm btn-primary pill"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                <div class="product-card-footer">
+                                    <p class="btn-inline fw-regular mt-20 mb-0"><a href="#x"><i class="fas fa-heart fs-24 text-danger"></i></a> <span class="text-danger fw-bold">47</span></p>
+                                </div><!-- / product-cart-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-4 grid-item">
+                        <div class="card card-w-raised-img-top" data-aos="fade-up" data-aos-delay="500">
+                            <div class="card-body">
+                                <img class="card-raised-img-top rounded mb-30" src="../assets/images/ph-square.jpg" alt="">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Hoodie</a> <span class="price-inline title-color">$49.99</span></p>
+                                <p><a href="#x" class="card-text mt-5 title-link">Men's</a></p>
+                                <p class="mb-20 mt-15">Donec commodo sempera ipsum. Cras ut placerat arcu quis laoreet mi lacinia.</p>
+                                <a href="#x" class="btn btn-sm btn-primary pill"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                <div class="product-card-footer">
+                                    <p class="btn-inline fw-regular mt-20 mb-0"><a href="#x"><i class="fas fa-heart fs-24 text-danger"></i></a> <span class="text-danger fw-bold">14</span></p>
+                                </div><!-- / product-cart-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+                </div><!-- / row -->
+            </div><!-- / container -->
+        </section>
+
+        <div class="spacer-3x">&nbsp;</div>
+
+        <div class="container">
+            <h6 class="mb-20">4 Column Masonry Products</h6>
+        </div><!-- / container -->
+
+        <section class="lg bg-img" style="background-image: url(../assets/images/ph-bg.jpg)">
+            <div class="container">
+                <h3 class="section-title hidden text-center mb-60" data-aos="fade-down">Latest Products</h3>
+                <div class="row" data-isotope='{ "layoutMode": "masonry" }'>
+                    <div class="col-md-6 col-xl-3 grid-item">
+                        <div class="card" data-aos="fade-up">
+                            <div class="card-body p-y-30">
+                                <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                <p class="card-title product-title fs-20 mb-10"> <a href="#x" class="title-link primary-hover fs-20">Blue Tee</a> <span class="price-inline title-color">$19.99</span></p>
+                                <p class="ratings mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                <p class="mb-20 mt-15">Donec commodo sempera ipsum. Cras ut placerat arcu quis laoreet mi lacinia.</p>
+                                <div class="product-card-footer mt-20">
+                                    <a href="#x" class="btn btn-primary btn-block"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                </div><!-- / product-card-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-xl-3 grid-item">
+                        <div class="card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-body p-y-30">
+                                <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                <p class="card-title product-title fs-20 mb-10"> <a href="#x" class="title-link primary-hover fs-20">BLK Cap</a> <span class="price-inline title-color">$39.99</span></p>
+                                <p class="ratings mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                <p class="mb-20 mt-15">Donec commodo sempera.</p>
+                                <div class="product-card-footer mt-20">
+                                    <a href="#x" class="btn btn-primary btn-block"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                </div><!-- / product-card-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-xl-3 grid-item">
+                        <div class="card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-body p-y-30">
+                                <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                <p class="card-title product-title fs-20 mb-10"> <a href="#x" class="title-link primary-hover fs-20">Sneakers</a> <span class="price-inline title-color">$89.99</span></p>
+                                <p class="ratings mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                <p class="mb-20 mt-15">Donec commodo sempera ipsum. Cras ut placerat.</p>
+                                <div class="product-card-footer mt-20">
+                                    <a href="#x" class="btn btn-primary btn-block"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                </div><!-- / product-card-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-xl-3 grid-item">
+                        <div class="card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-body p-y-30">
+                                <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                <p class="card-title product-title fs-20 mb-10"> <a href="#x" class="title-link primary-hover fs-20">LT Bag</a> <span class="price-inline title-color">$49.99</span></p>
+                                <p class="ratings mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                <p class="mb-20 mt-15">Donec commodo sempera ipsum. Cras ut placerat arcu quis laoreet mi lacinia.</p>
+                                <div class="product-card-footer mt-20">
+                                    <a href="#x" class="btn btn-primary btn-block"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                </div><!-- / product-card-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-xl-3 grid-item">
+                        <div class="card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card-body p-y-30">
+                                <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                <p class="card-title product-title fs-20 mb-10"> <a href="#x" class="title-link primary-hover fs-20">SM Watch</a> <span class="price-inline title-color">$199.99</span></p>
+                                <p class="ratings mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                <p class="mb-20 mt-15">Donec commodo sempera ipsum. Cras ut placerat arcu quis laoreet mi lacinia.</p>
+                                <div class="product-card-footer mt-20">
+                                    <a href="#x" class="btn btn-primary btn-block"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                </div><!-- / product-card-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-xl-3 grid-item">
+                        <div class="card" data-aos="fade-up" data-aos-delay="500">
+                            <div class="card-body p-y-30">
+                                <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                <p class="card-title product-title fs-20 mb-10"> <a href="#x" class="title-link primary-hover fs-20">Black Tee</a> <span class="price-inline title-color">$29.99</span></p>
+                                <p class="ratings mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                <p class="mb-20 mt-15">Donec commodo sempera ipsum. Cras ut placerat.</p>
+                                <div class="product-card-footer mt-20">
+                                    <a href="#x" class="btn btn-primary btn-block"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                </div><!-- / product-card-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-xl-3 grid-item">
+                        <div class="card" data-aos="fade-up" data-aos-delay="600">
+                            <div class="card-body p-y-30">
+                                <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                <p class="card-title product-title fs-20 mb-10"> <a href="#x" class="title-link primary-hover fs-20">CL Watch</a> <span class="price-inline title-color">$99.99</span></p>
+                                <p class="ratings mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                <p class="mb-20 mt-15">Donec commodo sempera.</p>
+                                <div class="product-card-footer mt-20">
+                                    <a href="#x" class="btn btn-primary btn-block"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                </div><!-- / product-card-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-xl-3 grid-item">
+                        <div class="card" data-aos="fade-up" data-aos-delay="700">
+                            <div class="card-body p-y-30">
+                                <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                <p class="card-title product-title fs-20 mb-10"> <a href="#x" class="title-link primary-hover fs-20">Hoodie</a> <span class="price-inline title-color">$49.99</span></p>
+                                <p class="ratings mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                <p class="mb-20 mt-15">Donec commodo sempera.</p>
+                                <div class="product-card-footer mt-20">
+                                    <a href="#x" class="btn btn-primary btn-block"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                </div><!-- / product-card-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+                </div><!-- / row -->
+            </div><!-- / container -->
+        </section>
+
+        <div class="spacer-3x">&nbsp;</div>
+
+        <div class="container">
+            <h6 class="mb-20">Filtered Masonry Products</h6>
+        </div><!-- / container -->
+
+        <section class="lg bg-img" style="background-image: url(../assets/images/blur-light.jpg)">
+            <div class="container">
+                <h3 class="section-title hidden text-center mb-60" data-aos="fade-down">Our Products</h3>
+                <div class="button-group filters-button-group mb-70">
+                    <span class="fs-14 fw-medium title-color mr-20 mb-0">Filter:</span>
+                    <button class="btn filter-btn is-checked" data-filter="*">All</button>
+                    <button class="btn filter-btn" data-filter=".mens">Mens</button>
+                    <button class="btn filter-btn" data-filter=".womens">Womens</button>
+                    <button class="btn filter-btn" data-filter=".accessories">Accessories</button>
+                </div><!-- /  filters-button-group -->
+
+                <div class="row grid" data-isotope='{ "layoutMode": "masonry" }'>
+                    <div class="col-md-6 col-lg-4 grid-item mens">
+                        <div class="card card-w-raised-img-top">
+                            <div class="card-body">
+                                <img class="card-raised-img-top rounded mb-30" src="../assets/images/ph-square.jpg" alt="">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Black Tee</a> <span class="price-inline title-color">$29.99</span></p>
+                                <p><a href="#x" class="card-text mt-5 title-link">Men's</a></p>
+                                <p class="mb-20 mt-15">Donec commodo sempera ipsum. Cras ut placerat arcu quis laoreet mi lacinia.</p>
+                                <a href="#x" class="btn btn-sm btn-primary pill"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                <div class="product-card-footer">
+                                    <p class="btn-inline fw-regular mt-20 mb-0"><a href="#x"><i class="far fa-heart fs-24 text-danger"></i></a> <span class="text-danger fw-bold">12</span></p>
+                                </div><!-- / product-cart-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-4 grid-item accessories">
+                        <div class="card card-w-raised-img-top">
+                            <div class="card-body">
+                                <img class="card-raised-img-top rounded mb-30" src="../assets/images/ph-square.jpg" alt="">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Smart Watch</a> <span class="price-inline title-color">$199.99</span></p>
+                                <p><a href="#x" class="card-text mt-5 title-link">Accessories</a></p>
+                                <p class="mb-20 mt-15">Praesent ornare ultricies arcu, in faucibus arcu ullamcorper in. Nunc pretium mollis ligula ut molestie. Nulla a sodales ipsum.</p>
+                                <a href="#x" class="btn btn-sm btn-primary pill"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                <div class="product-card-footer">
+                                    <p class="btn-inline fw-regular mt-20 mb-0"><a href="#x"><i class="fas fa-heart fs-24 text-danger"></i></a> <span class="text-danger fw-bold">47</span></p>
+                                </div><!-- / product-cart-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-4 grid-item womens">
+                        <div class="card card-w-raised-img-top">
+                            <div class="card-body">
+                                <img class="card-raised-img-top rounded mb-30" src="../assets/images/ph-square.jpg" alt="">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Blue Tee</a> <span class="price-inline title-color">$19.99</span></p>
+                                <p><a href="#x" class="card-text mt-5 title-link">Women's</a></p>
+                                <p class="mb-20 mt-15">Cras porttitor sapien gravida.</p>
+                                <a href="#x" class="btn btn-sm btn-primary pill"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                <div class="product-card-footer">
+                                    <p class="btn-inline fw-regular mt-20 mb-0"><a href="#x"><i class="fas fa-heart fs-24 text-danger"></i></a> <span class="text-danger fw-bold">23</span></p>
+                                </div><!-- / product-cart-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-4 grid-item womens">
+                        <div class="card card-w-raised-img-top">
+                            <div class="card-body">
+                                <img class="card-raised-img-top rounded mb-30" src="../assets/images/ph-square.jpg" alt="">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Running Shoes</a> <span class="price-inline title-color">$89.99</span></p>
+                                <p><a href="#x" class="card-text mt-5 title-link">Men's</a></p>
+                                <p class="mb-20 mt-15">Praesent ornare ultricies arcu, in faucibus arcu ullamcorper in. Nunc pretium mollis ligula ut molestie. Nulla a sodales ipsum. Cras porttitor sapien gravida pharetra.</p>
+                                <a href="#x" class="btn btn-sm btn-primary pill"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                <div class="product-card-footer">
+                                    <p class="btn-inline fw-regular mt-20 mb-0"><a href="#x"><i class="far fa-heart fs-24 text-danger"></i></a> <span class="text-danger fw-bold">7</span></p>
+                                </div><!-- / product-cart-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-4 grid-item mens">
+                        <div class="card card-w-raised-img-top">
+                            <div class="card-body">
+                                <img class="card-raised-img-top rounded mb-30" src="../assets/images/ph-square.jpg" alt="">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">LT Bag</a> <span class="price-inline title-color">$49.99</span></p>
+                                <p><a href="#x" class="card-text mt-5 title-link">Women's</a></p>
+                                <p class="mb-20 mt-15">Praesent ornare ultricies arcu, in faucibus arcu ullamcorper in. Nunc pretium mollis ligula ut molestie. Nulla a sodales ipsum.</p>
+                                <a href="#x" class="btn btn-sm btn-primary pill"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                <div class="product-card-footer">
+                                    <p class="btn-inline fw-regular mt-20 mb-0"><a href="#x"><i class="fas fa-heart fs-24 text-danger"></i></a> <span class="text-danger fw-bold">47</span></p>
+                                </div><!-- / product-cart-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+
+                    <div class="col-md-6 col-lg-4 grid-item accessories">
+                        <div class="card card-w-raised-img-top">
+                            <div class="card-body">
+                                <img class="card-raised-img-top rounded mb-30" src="../assets/images/ph-square.jpg" alt="">
+                                <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Hoodie</a> <span class="price-inline title-color">$49.99</span></p>
+                                <p><a href="#x" class="card-text mt-5 title-link">Men's</a></p>
+                                <p class="mb-20 mt-15">Donec commodo sempera ipsum. Cras ut placerat arcu quis laoreet mi lacinia.</p>
+                                <a href="#x" class="btn btn-sm btn-primary pill"><i class="fas fa-shopping-cart mr-5"></i> <span>Add to Cart</span></a>
+                                <div class="product-card-footer">
+                                    <p class="btn-inline fw-regular mt-20 mb-0"><a href="#x"><i class="fas fa-heart fs-24 text-danger"></i></a> <span class="text-danger fw-bold">14</span></p>
+                                </div><!-- / product-cart-footer -->
+                            </div><!-- / card-body -->
+                        </div><!-- / card -->
+                    </div><!-- / column -->
+                </div><!-- / row -->
+            </div><!-- / container -->
+        </section>
+
+        <div class="spacer-3x">&nbsp;</div>
+
+        <div class="container">
+            <h6 class="mb-20">Products Swiper</h6>
+        </div><!-- / container -->
+
+        <section>
+            <div class="container">
+                <h3 class="section-title hidden text-center mb-60" data-aos="fade-down">Related Products</h3>
+                <div id="products-swiper" class="swiper-container pagination-down">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body p-y-30">
+                                    <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                    <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Black Tee</a> <span class="price-inline title-color">$29.99</span></p>
+                                    <p><a href="#x" class="card-text mt-5 title-link">Men's</a></p>
+                                    <p class="ratings mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                    <div class="product-card-footer">
+                                        <a href="#x" class="btn btn-xs btn-primary btn-inline mt-10"><i class="fas fa-shopping-cart mr-5"></i> <span>Buy Now</span></a>
+                                    </div><!-- / product-card-footer -->
+                                </div><!-- / card-body -->
+                            </div><!-- / card -->
+                        </div><!-- / swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body p-y-30">
+                                    <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                    <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Smart Watch</a> <span class="price-inline title-color">$199.99</span></p>
+                                    <p><a href="#x" class="card-text mt-5 title-link">Accessories</a></p>
+                                    <p class="ratings mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                    <div class="product-card-footer">
+                                        <a href="#x" class="btn btn-xs btn-primary btn-inline mt-10"><i class="fas fa-shopping-cart mr-5"></i> <span>Buy Now</span></a>
+                                    </div><!-- / product-card-footer -->
+                                </div><!-- / card-body -->
+                            </div><!-- / card -->
+                        </div><!-- / swiper-slide -->
+                        <div class="swiper-slide">
+                           <div class="card">
+                                <div class="card-body p-y-30">
+                                    <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                    <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Blue Tee</a> <span class="price-inline title-color">$19.99</span></p>
+                                    <p><a href="#x" class="card-text mt-5 title-link">Women's</a></p>
+                                    <p class="ratings mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                    <div class="product-card-footer">
+                                        <a href="#x" class="btn btn-xs btn-primary btn-inline mt-10"><i class="fas fa-shopping-cart mr-5"></i> <span>Buy Now</span></a>
+                                    </div><!-- / product-card-footer -->
+                                </div><!-- / card-body -->
+                            </div><!-- / card -->
+                        </div><!-- / swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body p-y-30">
+                                    <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                    <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">LT Bag</a> <span class="price-inline title-color">$49.99</span></p>
+                                    <p><a href="#x" class="card-text mt-5 title-link">Women's</a></p>
+                                    <p class="ratings mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                    <div class="product-card-footer">
+                                        <a href="#x" class="btn btn-xs btn-primary btn-inline mt-10"><i class="fas fa-shopping-cart mr-5"></i> <span>Buy Now</span></a>
+                                    </div><!-- / product-card-footer -->
+                                </div><!-- / card-body -->
+                            </div><!-- / card -->
+                        </div><!-- / swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body p-y-30">
+                                    <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                    <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">Running Shoes</a> <span class="price-inline title-color">$89.99</span></p>
+                                    <p><a href="#x" class="card-text mt-5 title-link">Men's</a></p>
+                                    <p class="ratings mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                    <div class="product-card-footer">
+                                        <a href="#x" class="btn btn-xs btn-primary btn-inline mt-10"><i class="fas fa-shopping-cart mr-5"></i> <span>Buy Now</span></a>
+                                    </div><!-- / product-card-footer -->
+                                </div><!-- / card-body -->
+                            </div><!-- / card -->
+                        </div><!-- / swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body p-y-30">
+                                    <img src="../assets/images/ph-square.jpg" alt="" class="mb-30 rounded">
+                                    <p class="card-title product-title fs-20"> <a href="#x" class="title-link primary-hover fs-20">CL Watch</a> <span class="price-inline title-color">$99.99</span></p>
+                                    <p><a href="#x" class="card-text mt-5 title-link">Accessories</a></p>
+                                    <p class="ratings mb-0"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                                    <div class="product-card-footer">
+                                        <a href="#x" class="btn btn-xs btn-primary btn-inline mt-10"><i class="fas fa-shopping-cart mr-5"></i> <span>Buy Now</span></a>
+                                    </div><!-- / product-card-footer -->
+                                </div><!-- / card-body -->
+                            </div><!-- / card -->
+                        </div><!-- / swiper-slide -->
+                    </div><!-- / swiper-wrapper -->
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div><!-- / products-swiper -->
+            </div><!-- / container -->
+        </section>
+    </div><!-- / main-container -->
+
+    <footer>
+        <div class="container">
+            <div class="row v-center mobile-center">
+                <div class="col-md-4 footer-left-area tablet-top">
+                    <p>© 2021 Glass UI by <a href="https://kingstudio.ro" target="_blank">KingStudio</a></p>
+                </div><!-- / footer-left-area -->
+                <div class="col-md-8 footer-right-area">
+                    <p>
+                        <a href="../index.html" class="text-link mr-15">Home</a>
+                        <a href="../components.html" class="text-link mr-15">Components</a>
+                        <a href="../sections.html" class="text-link mr-15">Sections</a>
+                        <a href="../templates.html" class="text-link">Templates</a>
+                    </p>
+                </div><!-- / footer-right-area -->
+            </div><!-- / row -->
+        </div><!-- / container -->
+    </footer>
+
+    <!-- Core JavaScript -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/theme.js"></script>
+    <!-- / Core JavaScript -->
+
+    <!-- aos -->
+    <script src="../assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+          duration: 1200,
+        })
+    </script>
+    <!-- / aos -->
+
+    <!-- Isotope -->
+    <script src="../assets/js/isotope.min.js"></script>
+    <script src="../assets/js/isotope-filter.js"></script>
+    <!-- / Isotope -->
+
+    <!-- Swiper Slider -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('#products-swiper', {
+          slidesPerView: 3,
+          spaceBetween: 15,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          breakpoints: {
+            '@0.5': {
+              slidesPerView: 1,
+            },
+            '@0.75': {
+              slidesPerView: 2,
+            },
+            '@1.00': {
+              slidesPerView: 3,
+            },
+          }
+        });
+    </script><!-- / swiper-init -->
+    <!-- / Swiper Slider -->
+    
+</body>
+</html>
