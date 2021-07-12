@@ -1,13 +1,14 @@
 <template>
   <div class="products-show">
     <!-- <img v-if="product.product_images[0]" :src="`${product.product_images[0].url}`" alt="" /> -->
-    <div v-for="product in product.product_images" v-bind:key="product"><img v-bind:src="product.url" /></div>
+    <div v-for="(product, key) in product.product_images" v-bind:key="key"><img v-bind:src="product.url" /></div>
     <h3>{{ product.title }}</h3>
+    <!-- <div v-if="(product.sold = true)">{{ "Sold - no longer available" }}</div> -->
     <p>Category: {{ product.category.name }}</p>
     <p>Price: {{ "$" }}{{ product.price }}</p>
+    <!-- <div v-if="(product.trade = true)">{{ "Willing to trade" }}</div> -->
     <p>Description: {{ product.description }}</p>
-    <p>Sold? {{ product.sold }}</p>
-    <p>Condition: {{ product.conditon }}</p>
+    <p>Condition: {{ product.condition }}</p>
     <p>Seller contact: {{ product.user.email }}</p>
     <!-- Displays user that this product belongs to -->
     <p>{{ "Seller Profile:" }}</p>
@@ -32,7 +33,6 @@ export default {
   data: function () {
     return {
       product: [],
-      // productImages: [],
     };
   },
   created: function () {

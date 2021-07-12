@@ -1,11 +1,20 @@
 <template>
   <div class="products-index">
+    <label for="categories">Categories:</label>
+    <select v-model="categoryFilter" name="category" type="select">
+      <option v-for="category in categories" v-bind:key="category.id" :value="category.name">
+        {{ category.name }}
+      </option>
+    </select>
     <input type="text" v-model="search" placeholder="Search" />
     <!-- Button to post a new product -->
     <br />
     <br />
     <router-link v-bind:to="`/products/new`" tag="button">New Product</router-link>
-    <div v-for="product in orderBy(filterBy(products, search), 'created_at', -1)" v-bind:key="product.id">
+    <div
+      v-for="product in orderBy(filterBy(filterBy(products, categoryFilter, 'category'), search), 'created_at', -1)"
+      v-bind:key="product.id"
+    >
       <router-link v-bind:to="`/products/${product.id}`">
         <img v-if="product.product_images[0]" :src="`${product.product_images[0].url}`" alt="" />
         <p>{{ product.title }}</p>
@@ -26,18 +35,26 @@ export default {
   data: function () {
     return {
       products: [],
-      category: "",
       search: "",
+      categoryFilter: "",
+      categories: [],
     };
   },
   created: function () {
     this.productsIndex();
+    this.categoriesIndex();
   },
   methods: {
     productsIndex: function () {
       axios.get("/products").then((response) => {
         console.log(response.data);
         this.products = response.data;
+      });
+    },
+    categoriesIndex: function () {
+      axios.get("/categories").then((response) => {
+        console.log(response.data);
+        this.categories = response.data;
       });
     },
   },

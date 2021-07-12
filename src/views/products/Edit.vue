@@ -43,13 +43,13 @@
         <option value="Used">Used</option>
       </select>
     </div>
-    <div class="form-group">
+    <div class="form-check">
       <label>Willing to trade?</label>
-      <input type="checkbox" class="form-control" v-model="editProductParams.trade" />
+      <input type="checkbox" class="form-check-input" v-bind:value="false" v-model="editProductParams.trade" />
     </div>
-    <div class="form-group">
+    <div class="form-check">
       <label>Sold?</label>
-      <input type="checkbox" class="form-control" v-model="editProductParams.sold" />
+      <input type="checkbox" class="form-check-input" v-model="editProductParams.sold" />
     </div>
     <p>Please add at least one image below or your listing will not get posted!</p>
     <div>
@@ -64,6 +64,8 @@
     <br />
     <button v-on:click="editProduct">Save Changes</button>
     <button v-on:click="destroyProduct">Delete Product</button>
+    {{ editProductParams }}
+    <!-- {{ typeof editProductParams.sold }} -->
   </div>
 </template>
 
