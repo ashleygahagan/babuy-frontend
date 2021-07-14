@@ -9,28 +9,50 @@
         </nav>
         <!-- / bradcrumb -->
       </div>
-      <div class="col-md-6 col-lg-4">
-        <div class="widget">
-          <h6 class="widget-title">Search</h6>
-          <div class="input-group input-w-overlap-btn mb-0">
-            <input type="text" v-model="search" class="form-control pill" placeholder="Search" />
-            <span class="input-group-btn">
-              <button class="btn btn-sm btn-icon btn-circle btn-primary overlapping-btn" type="button">
-                <i class="fas fa-search"></i>
-              </button>
-            </span>
-            <!-- / input-group-btn -->
-          </div>
-          <!-- / input-group -->
-        </div>
-        <!-- / widget -->
-      </div>
+
       <!-- / container -->
     </header>
 
-    <section class="lg bg-img" style="background-image: url(/assets/images/blur-primary.jpg)">
+    <!-- non-picture background -->
+    <section class="lg bg-gradient-body">
+      <!-- <div class="spacer-3x">&nbsp;</div> -->
       <div class="container">
-        <h3 class="section-title hidden text-center mb-60" data-aos="fade-down">Latest Products</h3>
+        <nav class="top-nav top-nav-light bg-white-frosted" style="border-radius: 1rem">
+          <div class="container">
+            <div class="row v-center">
+              <div class="left col-md-6">
+                <router-link v-bind:to="`/products/new`" tag="button" class="btn btn-gradient-primary mr-10">
+                  New Product
+                </router-link>
+              </div>
+              <!-- / column -->
+              <div class="right col-md-3 text-right">
+                <select v-model="categoryFilter" class="custom-select" id="select">
+                  <option value="">Select Category</option>
+                  <option v-for="category in categories" v-bind:key="category.id" :value="category.name">
+                    {{ category.name }}
+                  </option>
+                </select>
+              </div>
+              <!-- / column -->
+              <div class="right col-md-3 text-right">
+                <div class="input-group mb-0">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-search text-primary"></i></span>
+                  </div>
+                  <input v-model="search" type="text" class="form-control w-icon-left" placeholder="Search..." />
+                </div>
+              </div>
+              <!-- / column -->
+            </div>
+            <!-- / row -->
+          </div>
+          <!-- / container -->
+        </nav>
+      </div>
+      <div class="spacer-1x">&nbsp;</div>
+      <div class="container">
+        <h3 class="section-title hidden text-center mb-60 aos-init aos-animate" data-aos="fade-down">Latest Posts</h3>
         <div class="row">
           <div
             class="col-md-6 col-lg-4"
@@ -41,43 +63,45 @@
             )"
             v-bind:key="product.id"
           >
-            <div class="card" data-aos="fade-up">
-              <div class="card-body p-y-30">
-                <img
-                  v-if="product.product_images[0]"
-                  :src="`${product.product_images[0].url}`"
-                  alt=""
-                  class="mb-30 rounded"
-                />
-                <p class="card-title product-title fs-20">
-                  <a href="#x" class="title-link primary-hover fs-20">{{ product.title }}</a>
-                  <span class="price-inline title-color">{{ "$" }}{{ product.price }}</span>
-                </p>
-                <p>
-                  <a href="#x" class="card-text mt-5 title-link">{{ product.category.name }}</a>
-                </p>
-                <div class="product-card-footer">
-                  <router-link class="btn btn-xs btn-primary btn-inline mt-10" v-bind:to="`/products/${product.id}`">
-                    <i class="fas fa-shopping-cart mr-5"></i>
-                    <span>More Info</span>
-                    >
-                  </router-link>
+            <router-link v-bind:to="`/products/${product.id}`">
+              <div class="card aos-init aos-animate" data-aos="fade-up">
+                <div class="card-body pb-30">
+                  <img
+                    v-if="product.product_images[0]"
+                    :src="`${product.product_images[0].url}`"
+                    alt=""
+                    class="rounded raised-sm mb-30"
+                  />
+
+                  <p class="card-title">
+                    <a href="#x" class="fs-24 text-link title-color primary-hover va-middle">{{ product.title }}</a>
+                  </p>
+
+                  <p class="mt-10 mb-0 fs-14">
+                    {{ product.category.name }}
+                  </p>
+                  <p class="fs-16 bt-1 border-faded pt-15 mt-20 mb-0">
+                    <span class="pull-right">
+                      <i class="fas fa-dollar-sign"></i>
+                      {{ product.price }}
+                    </span>
+                  </p>
                 </div>
-                <!-- / product-card-footer -->
+                <!-- / card-body -->
               </div>
-              <!-- / card-body -->
-            </div>
+            </router-link>
             <!-- / card -->
           </div>
           <!-- / column -->
         </div>
         <!-- / row -->
       </div>
-      <!-- / container -->
     </section>
 
     <div class="spacer-3x">&nbsp;</div>
 
+    <!-- / ORIGINAL CODE -->
+    <!-- 
     <label for="categories">Categories:</label>
     <select v-model="categoryFilter" name="category" type="select">
       <option v-for="category in categories" v-bind:key="category.id" :value="category.name">
@@ -85,7 +109,6 @@
       </option>
     </select>
     <input type="text" v-model="search" placeholder="Search" />
-    <!-- Button to post a new product -->
     <br />
     <br />
     <router-link v-bind:to="`/products/new`" tag="button">New Product</router-link>
@@ -99,7 +122,7 @@
       </router-link>
       <p>{{ product.category.name }}</p>
       <p>{{ "$" }}{{ product.price }}</p>
-    </div>
+    </div> -->
   </div>
 </template>
 

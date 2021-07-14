@@ -1,41 +1,40 @@
 <template>
   <div id="app">
-    <div class="container relative">
-      <nav class="navbar navbar-expand-lg navbar-light main-nav z-index-99999">
-        <div class="container-fluid">
-          <router-link class="navbar-brand" to="/"><img src="assets/images/logo.png" alt="babuy" /></router-link>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white-frosted z-index-6">
+      <div class="container">
+        <router-link class="navbar-brand" to="/"><img src="/assets/images/logo.png" alt="babuy" /></router-link>
 
-          <div class="collapse navbar-collapse" id="navbar-1">
-            <ul class="navbar-nav mr-auto ml-15">
-              <!-- / nav-item -->
-              <li v-if="isLoggedIn()" class="nav-item">
-                <router-link class="nav-link" to="/products">Products</router-link>
-              </li>
-              <!-- / nav-item -->
-              <li class="nav-item">
-                <router-link class="nav-link" :to="`/users/${getUserId()}`">Profile</router-link>
-              </li>
-              <!-- / nav-item -->
-              <li v-if="isLoggedIn()" class="nav-item">
-                <router-link class="nav-link" to="/logout">Logout</router-link>
-              </li>
-              <!-- / nav-item -->
-              <li v-if="!isLoggedIn()" class="nav-item">
-                <router-link class="nav-link" to="/signup">Signup</router-link>
-              </li>
-              <!-- / nav-item -->
-              <li v-if="!isLoggedIn()" class="nav-item">
-                <router-link class="nav-link" to="/login">Login</router-link>
-              </li>
-            </ul>
-            <!-- / navbar-button -->
-          </div>
-          <!-- / navbar-collapse -->
+        <div class="collapse navbar-collapse" id="navbar-1">
+          <ul class="navbar-nav ml-auto">
+            <!-- / nav-item -->
+            <li v-if="isLoggedIn()" class="nav-item">
+              <router-link class="nav-link" to="/products">Products</router-link>
+            </li>
+            <!-- / nav-item -->
+            <li v-if="isLoggedIn()" lass="nav-item">
+              <router-link class="nav-link" :to="`/users/${getUserId()}`">Profile</router-link>
+            </li>
+            <!-- / nav-item -->
+            <li v-if="isLoggedIn()" class="nav-item">
+              <router-link class="nav-link" to="/logout">Logout</router-link>
+            </li>
+            <!-- / nav-item -->
+            <li v-if="!isLoggedIn()" class="nav-item">
+              <router-link class="nav-link" to="/signup">Signup</router-link>
+            </li>
+            <!-- / nav-item -->
+            <li v-if="!isLoggedIn()" class="nav-item">
+              <router-link class="nav-link" to="/login">Login</router-link>
+            </li>
+          </ul>
+          <!-- / navbar-button -->
         </div>
-        <!-- / container-fluid -->
-      </nav>
-      <!-- / navbar -->
-    </div>
+        <!-- / navbar-collapse -->
+      </div>
+      <!-- / container-fluid -->
+    </nav>
+    <!-- / navbar -->
+
     <!-- / container -->
     <!-- / original header -->
     <!-- <div id="nav">
@@ -54,6 +53,7 @@
         <router-link to="/login">Login</router-link>
       </span>
     </div> -->
+
     <router-view />
   </div>
 </template>
