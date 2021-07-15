@@ -1,34 +1,26 @@
 <template>
   <div class="products-show">
-    <header class="page-header bg-gradient-body">
-      <div class="container">
-        <h4 class="page-title mb-15" data-aos="fade-down">{{ product.title }}</h4>
-        <nav class="breadcrumb p-y-0 p-x-0" data-aos="fade-right">
-          <router-link class="breadcrumb-item" to="/home">Home</router-link>
-          <router-link class="breadcrumb-item" to="/products">Products</router-link>
-          <span class="breadcrumb-item active">Details</span>
-        </nav>
-        <!-- / bradcrumb -->
-      </div>
-      <!-- / container -->
-    </header>
-
     <div class="main-container p-0">
-      <section class="p-y-100">
+      <div class="bg-gradient-body">
         <div class="container">
           <div class="row v-center">
+            <div class="spacer-2x">&nbsp;</div>
             <div class="col-lg-6 tablet-lg-top-30 page-content" data-aos="fade-up" data-aos-delay="100">
-              <div id="product-swiper" class="swiper-container rounded">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="/assets/images/ph-square.jpg" alt="" /></div>
-                  <div class="swiper-slide"><img src="/assets/images/ph-square.jpg" alt="" /></div>
-                  <div class="swiper-slide"><img src="/assets/images/ph-square.jpg" alt="" /></div>
+              <div class="row">
+                <div class="glightbox-gallery">
+                  <img
+                    v-for="(product, key) in product.product_images"
+                    v-bind:key="key"
+                    v-bind:src="product.url"
+                    class="rounded-sm"
+                  />
                 </div>
-                <!-- / swiper-wrapper -->
-                <!-- Add Arrows -->
-                <div class="swiper-pagination"></div>
               </div>
-              <!-- / product-swiper -->
+              <!-- / column -->
+              <!-- / row -->
+
+              <div class="spacer">&nbsp;</div>
+              <!-- / column -->
             </div>
             <!-- / column -->
 
@@ -39,6 +31,8 @@
               </p>
               <h4 class="mb-5">{{ product.title }}</h4>
               <p class="fs-20 mb-15">{{ "$" }}{{ product.price }}</p>
+              <p class="m-y-5 badge badge-pill badge-danger" v-if="product.sold == true">Sold</p>
+
               <p class="fs-18 mb-15">Condition: {{ product.condition }}</p>
               <p class="lead m-y-40">
                 {{ product.description }}
@@ -74,6 +68,7 @@
                       <span>Edit Product</span>
                     </router-link>
                   </span>
+                  <div class="spacer-2x">&nbsp;</div>
                 </div>
                 <!-- / input-group -->
               </div>
@@ -82,8 +77,7 @@
             <!-- / column -->
           </div>
         </div>
-        <!-- / container -->
-      </section>
+      </div>
       <!-- / product -->
     </div>
     <!-- / main-container -->

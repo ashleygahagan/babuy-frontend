@@ -4,7 +4,7 @@
       class="pt-0 lg bg-img jarallax"
       data-jarallax
       data-speed="0.8"
-      style="background-image: url(../assets/images/ph-bg.jpg)"
+      style="background-image: url(../assets/images/home.jpg)"
     >
       <div class="overlay-lighter"></div>
       <div class="container">
@@ -22,73 +22,24 @@
             <div class="col-md-7">
               <div class="card mb-0 w-70 ml-auto mr-0" data-aos="fade-up" data-aos-delay="1000">
                 <div class="card-body">
-                  <form class="needs-validation" id="register-form3" novalidate="novalidate">
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        class="form-control"
-                        name="emailRegister3"
-                        placeholder="&#xf0e0; Email"
-                        style="font-family: 'Font Awesome 5 Free', sans-serif !important; font-weight: 400"
-                        required=""
-                      />
-                    </div>
-                    <!-- / form-group -->
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="usernameRegister3"
-                        placeholder="&#xf2bd; Username"
-                        style="font-family: 'Font Awesome 5 Free', sans-serif !important; font-weight: 400"
-                        required=""
-                      />
-                    </div>
-                    <!-- / form-group -->
-                    <div class="form-group">
-                      <input
-                        type="password"
-                        id="passwordRegister3"
-                        class="form-control"
-                        name="passwordRegister3"
-                        placeholder="&#xf11c; Password"
-                        style="font-family: 'Font Awesome 5 Free', sans-serif !important; font-weight: 400"
-                        required=""
-                      />
-                    </div>
-                    <!-- / form-group -->
-                    <div class="form-group">
-                      <input
-                        type="password"
-                        class="form-control"
-                        name="passwordRegisterConfirm3"
-                        placeholder="&#xf14a; Confirm Password"
-                        style="font-family: 'Font Awesome 5 Free', sans-serif !important; font-weight: 400"
-                        required=""
-                      />
-                    </div>
-                    <!-- / form-group -->
-
-                    <div class="form-footer mt-30">
-                      <div class="checkbox checkbox-primary ml-10 text-left mb-30">
-                        <label class="hidden"><input type="checkbox" /></label>
-                        <input id="checkbox-register2" type="checkbox" />
-                        <label for="checkbox-register2">
-                          <span>
-                            Accept
-                            <a href="#x">Terms &amp; Conditions</a>
-                          </span>
-                        </label>
+                  <div class="card w-raised-icon lg-icon">
+                    <div class="card-body text-right">
+                      <div class="raised-icon bg-glass-frosted icon-lg right-30 circle raised">
+                        <i class="fas fa-baby text-primary-light"></i>
                       </div>
-                      <!-- / checkbox -->
-                      <button type="submit" class="btn btn-primary d-block w-100">
-                        <i class="fas fa-user-plus mr-5"></i>
-                        Register
-                      </button>
+                      <!-- / raised-icon -->
+                      <h5 class="card-title mt-40">About Us</h5>
+                      <p class="card-text">Simply create an account, login, and begin shopping or selling!</p>
+                      <li v-if="isLoggedIn()" class="btn btn-primary-light pill">
+                        <router-link class="nav-link" to="/products">Check It Out</router-link>
+                      </li>
+                      <!-- / nav-item -->
+                      <li v-if="!isLoggedIn()" class="btn btn-primary-light pill">
+                        <router-link class="nav-link" to="/login">Check It Out</router-link>
+                      </li>
                     </div>
-                    <!-- /form-footer -->
-                  </form>
-                  <!-- / register-form -->
+                    <!-- / card-body -->
+                  </div>
                 </div>
                 <!-- / card-body -->
               </div>
@@ -116,6 +67,13 @@ export default {
     };
   },
   created: function () {},
-  methods: {},
+  methods: {
+    isLoggedIn: function () {
+      return localStorage.getItem("jwt");
+    },
+    getUserId: function () {
+      return localStorage.user_id;
+    },
+  },
 };
 </script>

@@ -1,74 +1,71 @@
 <template>
   <div class="users-edit">
-    <header class="page-header bg-img" style="background-image: url(/assets/images/page-light.jpg)">
-      <div class="overlay-light"></div>
-      <div class="container">
-        <h4 class="page-title mb-15" data-aos="fade-down">Edit Profile</h4>
-        <nav class="breadcrumb p-y-0 p-x-0" data-aos="fade-right">
-          <router-link class="breadcrumb-item" to="/home">Home</router-link>
-          <span class="breadcrumb-item active">Edit Profile</span>
-        </nav>
-      </div>
-    </header>
-
-    <div class="container p-y-60">
-      <div class="m-x-auto" style="max-width: 800px">
-        <div class="card mb-15" data-aos="fade-up" data-aos-delay="200">
-          <div class="card-body p-x-25">
-            <div class="form-group">
-              <input
-                input
-                type="text"
-                class="form-control"
-                v-model="editUserParams.first_name"
-                placeholder="first_name"
-              />
+    <section class="lg bg-gradient-body">
+      <div class="container p-y-60">
+        <div class="m-x-auto" style="max-width: 800px">
+          <div class="card mb-15" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-body p-x-25">
+              <h4 class="page-title mb-15" data-aos="fade-down">Edit Profile</h4>
+              <nav class="breadcrumb p-y-0 p-x-0" data-aos="fade-right">
+                <router-link class="breadcrumb-item" to="/home">Home</router-link>
+                <span class="breadcrumb-item active">Edit Profile</span>
+              </nav>
+              <div class="spacer-1x">&nbsp;</div>
+              <div class="form-group">
+                <input
+                  input
+                  type="text"
+                  class="form-control"
+                  v-model="editUserParams.first_name"
+                  placeholder="first_name"
+                />
+              </div>
+              <!-- / form-group -->
+              <div class="form-group">
+                <input type="text" class="form-control" v-model="editUserParams.last_name" placeholder="last_name" />
+              </div>
+              <!-- / form-group -->
+              <div class="form-group">
+                <input type="text" class="form-control" v-model="editUserParams.username" placeholder="username" />
+              </div>
+              <!-- / form-group -->
+              <div class="form-group">
+                <input type="email" class="form-control" v-model="editUserParams.email" placeholder="email" />
+              </div>
+              <!-- / form-group -->
+              <div class="form-group">
+                <input type="text" class="form-control" v-model="editUserParams.zip_code" placeholder="zip_code" />
+              </div>
+              <!-- / form-group -->
+              <div class="form-group">
+                <input type="password" class="form-control" v-model="editUserParams.password" placeholder="Password" />
+              </div>
+              <!-- / form-group -->
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  v-model="editUserParams.password_confirmation"
+                  placeholder="Password Confirmation"
+                />
+              </div>
+              <p class="text-primary">Please add the URL for your profile photo here:</p>
+              <!-- / form-group -->
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  v-model="editUserParams.profile_picture"
+                  placeholder="Profile Picture URL"
+                />
+              </div>
+              <button class="btn btn-primary m-y-10 mr-10" v-on:click="editUser">Save Changes</button>
+              <button class="btn btn-danger-light m-y-10 mr-10" v-on:click="destroyUser">Delete Profile</button>
             </div>
-            <!-- / form-group -->
-            <div class="form-group">
-              <input type="text" class="form-control" v-model="editUserParams.last_name" placeholder="last_name" />
-            </div>
-            <!-- / form-group -->
-            <div class="form-group">
-              <input type="text" class="form-control" v-model="editUserParams.username" placeholder="username" />
-            </div>
-            <!-- / form-group -->
-            <div class="form-group">
-              <input type="email" class="form-control" v-model="editUserParams.email" placeholder="email" />
-            </div>
-            <!-- / form-group -->
-            <div class="form-group">
-              <input type="text" class="form-control" v-model="editUserParams.zip_code" placeholder="zip_code" />
-            </div>
-            <!-- / form-group -->
-            <div class="form-group">
-              <input type="password" class="form-control" v-model="editUserParams.password" placeholder="Password" />
-            </div>
-            <!-- / form-group -->
-            <div class="form-group">
-              <input
-                type="password"
-                class="form-control"
-                v-model="editUserParams.password_confirmation"
-                placeholder="Password Confirmation"
-              />
-            </div>
-            <p class="text-primary">Please add the URL for your profile photo here:</p>
-            <!-- / form-group -->
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control"
-                v-model="editUserParams.profile_picture"
-                placeholder="Profile Picture URL"
-              />
-            </div>
-            <button class="btn btn-primary m-y-10 mr-10" v-on:click="editUser">Save Changes</button>
-            <button class="btn btn-danger-light m-y-10 mr-10" v-on:click="destroyUser">Delete Profile</button>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 
   <!-- / column -->

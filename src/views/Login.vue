@@ -2,8 +2,9 @@
   <div class="login">
     <div
       class="pnf-container relative p-y-60 v-center bg-img"
-      style="background-image: url(../assets/images/blur-light.jpg)"
+      style="background-image: url(../assets/images/signup.jpg)"
     >
+      <div class="overlay-lighter"></div>
       <div class="container p-y-70">
         <div class="m-x-auto" style="max-width: 500px">
           <div class="card mb-15" data-aos="fade-up" data-aos-delay="200">
@@ -74,8 +75,8 @@
       </div>
     </div>
     <!-- / container -->
-
-    <form v-on:submit.prevent="submit()">
+  </div>
+  <!-- <form v-on:submit.prevent="submit()">
       <h1>Login</h1>
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
@@ -90,7 +91,7 @@
       </div>
       <input type="submit" value="Submit" />
     </form>
-  </div>
+  </div> -->
 </template>
 
 <script>

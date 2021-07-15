@@ -2,8 +2,9 @@
   <div class="signup">
     <div
       class="pnf-container relative p-y-60 v-center bg-img"
-      style="background-image: url(../assets/images/blur-light.jpg)"
+      style="background-image: url(../assets/images/signup2.jpg)"
     >
+      <div class="overlay-lighter"></div>
       <div class="container p-y-70">
         <div class="m-x-auto" style="max-width: 500px">
           <div class="card mb-15" data-aos="fade-up" data-aos-delay="200">
@@ -108,7 +109,7 @@
       </div>
     </div>
 
-    <form v-on:submit.prevent="submit()">
+    <!-- <form v-on:submit.prevent="submit()">
       <h1>Signup</h1>
       <ul>
         <li class="text-danger" v-for="error in errors" v-bind:key="error">
@@ -144,7 +145,7 @@
         <input type="password" class="form-control" v-model="newUserParams.password_confirmation" />
       </div>
       <input type="submit" class="btn btn-primary" value="Submit" />
-    </form>
+    </form> -->
   </div>
 </template>
 

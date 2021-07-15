@@ -2,7 +2,7 @@
   <div id="app">
     <nav class="navbar navbar-expand-lg navbar-light bg-white-frosted z-index-6">
       <div class="container">
-        <router-link class="navbar-brand" to="/"><img src="/assets/images/logo.png" alt="babuy" /></router-link>
+        <router-link class="navbar-brand" to="/"><img src="/assets/images/babuy.png" alt="babuy" /></router-link>
 
         <div class="collapse navbar-collapse" id="navbar-1">
           <ul class="navbar-nav ml-auto">
@@ -14,6 +14,10 @@
             <li v-if="isLoggedIn()" lass="nav-item">
               <router-link class="nav-link" :to="`/users/${getUserId()}`">Profile</router-link>
             </li>
+            <li v-if="isLoggedIn()" lass="nav-item">
+              <router-link class="nav-link" to="/products/new">New Product</router-link>
+            </li>
+
             <!-- / nav-item -->
             <li v-if="isLoggedIn()" class="nav-item">
               <router-link class="nav-link" to="/logout">Logout</router-link>
@@ -33,6 +37,7 @@
       </div>
       <!-- / container-fluid -->
     </nav>
+
     <!-- / navbar -->
 
     <!-- / container -->
@@ -55,6 +60,22 @@
     </div> -->
 
     <router-view />
+    <footer class="light">
+      <div class="container">
+        <div class="row v-center mobile-center">
+          <div class="col-md-4 footer-left-area tablet-top">
+            <p>© 2021 by Ashley Gahagan</p>
+          </div>
+          <!-- / footer-left-area -->
+          <div class="col-md-8 footer-right-area">
+            <!-- / footer-social -->
+          </div>
+          <!-- / footer-right-area -->
+        </div>
+        <!-- / row -->
+      </div>
+      <!-- / container -->
+    </footer>
   </div>
 </template>
 

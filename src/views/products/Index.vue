@@ -2,7 +2,7 @@
   <div class="products-index">
     <header class="page-header dark bg-img" style="background-image: url(/assets/images/page-dark.jpg)">
       <div class="container">
-        <h1 class="page-title mb-15" data-aos="fade-down">Products</h1>
+        <h1 class="page-title mb-15">Products</h1>
         <nav class="breadcrumb p-y-0 p-x-0" data-aos="fade-right">
           <router-link class="breadcrumb-item" to="/">Home</router-link>
           <span class="breadcrumb-item active">Products</span>
@@ -80,6 +80,7 @@
                   <p class="mt-10 mb-0 fs-14">
                     {{ product.category.name }}
                   </p>
+                  <p class="m-y-5 badge badge-pill badge-danger" v-if="product.sold == true">Sold</p>
                   <p class="fs-16 bt-1 border-faded pt-15 mt-20 mb-0">
                     <span class="pull-right">
                       <i class="fas fa-dollar-sign"></i>
@@ -97,8 +98,6 @@
         <!-- / row -->
       </div>
     </section>
-
-    <div class="spacer-3x">&nbsp;</div>
 
     <!-- / ORIGINAL CODE -->
     <!-- 

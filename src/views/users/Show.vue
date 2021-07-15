@@ -1,68 +1,60 @@
 <template>
   <div class="users-show">
-    <header class="page-header bg-img" style="background-image: url(../assets/images/page-light.jpg)">
-      <div class="overlay-light"></div>
-      <div class="container">
-        <h4 class="page-title mb-15" data-aos="fade-down">{{ user.username }}</h4>
-        <nav class="breadcrumb p-y-0 p-x-0" data-aos="fade-right">
-          <router-link class="breadcrumb-item" to="/home">Home</router-link>
-          <span class="breadcrumb-item active">Seller Profile</span>
-        </nav>
-        <!-- / bradcrumb -->
-      </div>
-      <!-- / container -->
-    </header>
-
     <div class="main-container p-0">
       <section class="lg bg-gradient-body">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-8 tablet-lg-top-30 page-content">
-              <div class="blog-post mb-50">
-                <div class="page-content" data-aos="fade-up" data-aos-delay="300">
-                  <img :src="user.profile_picture" alt="" class="raised-sm rounded-10" />
-                  <p class="fs-16 bt-1 bb-1 border-secondary p-15 m-y-40">
-                    <i class="far fa-user mr-5"></i>
-                    {{ user.username }}
-                    <span class="mr-5 ml-5 text-muted">/</span>
-                    <i class="fas fa-map-pin"></i>
-                    {{ user.zip_code }}
-                    <span class="pull-right">
-                      <i class="fas fa-envelope"></i>
-                      {{ user.email }}
-                    </span>
-                  </p>
-                </div>
-                <router-link
-                  v-if="$parent.getUserId() == user.id"
-                  v-bind:to="`/users/${user.id}/edit`"
-                  tag="button"
-                  class="btn btn-sm btn-primary-light m-y-5 mr-5"
-                >
-                  Edit Profile
-                </router-link>
+          <!-- <div class="row"> -->
+          <div class="col-lg-8 tablet-lg-top-30 page-content">
+            <div class="blog-post mb-50">
+              <h4 class="page-title mb-15">{{ user.username }}</h4>
+              <nav class="breadcrumb p-y-0 p-x-0" data-aos="fade-right">
+                <router-link class="breadcrumb-item" to="/home">Home</router-link>
+                <span class="breadcrumb-item active">Seller Profile</span>
+              </nav>
+              <div class="page-content" data-aos="fade-up" data-aos-delay="300">
+                <img :src="user.profile_picture" alt="" class="raised-sm rounded-10" />
+                <p class="fs-16 bt-1 bb-1 border-secondary p-15 m-y-40">
+                  <i class="far fa-user mr-5"></i>
+                  {{ user.username }}
+                  <span class="mr-5 ml-5 text-muted">/</span>
+                  <i class="fas fa-map-pin"></i>
+                  {{ user.zip_code }}
+                  <span class="pull-right">
+                    <i class="fas fa-envelope"></i>
+                    {{ user.email }}
+                  </span>
+                </p>
               </div>
-
-              <!-- / comments -->
+              <router-link
+                v-if="$parent.getUserId() == user.id"
+                v-bind:to="`/users/${user.id}/edit`"
+                tag="button"
+                class="btn btn-sm btn-primary-light m-y-5 mr-5"
+              >
+                Edit Profile
+              </router-link>
             </div>
-            <!-- / column -->
-          </div>
-          <!-- / row -->
-        </div>
-        <!-- / container -->
-      </section>
 
-      <section id="related-posts" class="lg bg-white">
-        <div class="container">
-          <h6 class="section-title mb-20" data-aos="fade-down">Products</h6>
-          <div class="row v-center">
-            <div v-for="product in user.products" v-bind:key="product.id" class="col-md-4">
-              <div class="card" data-aos="fade-up" data-aos-delay="100">
-                <router-link v-bind:to="`/products/${product.id}`" class="card-body pb-30">
-                  <img img v-if="product.product_images[0]" :src="`${product.product_images[0].url}`" alt="" />
-                  <h6 class="mb-5">{{ product.title }}</h6>
-                  <p class="fs-12 bt-1 border-faded pt-15 mt-20 mb-0"></p>
-                </router-link>
+            <!-- / comments -->
+          </div>
+          <!-- / column -->
+        </div>
+        <!-- / row -->
+        <!-- </div> -->
+        <!-- / container -->
+
+        <div id="related-posts">
+          <div class="container">
+            <h4 class="page-title mb-15" data-aos="fade-down">Products</h4>
+            <div class="row v-center">
+              <div v-for="product in user.products" v-bind:key="product.id" class="col-md-4">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                  <router-link v-bind:to="`/products/${product.id}`" class="card-body pb-30">
+                    <img img v-if="product.product_images[0]" :src="`${product.product_images[0].url}`" alt="" />
+                    <h6 class="mb-5">{{ product.title }}</h6>
+                    <p class="fs-12 bt-1 border-faded pt-15 mt-20 mb-0"></p>
+                  </router-link>
+                </div>
               </div>
             </div>
           </div>
