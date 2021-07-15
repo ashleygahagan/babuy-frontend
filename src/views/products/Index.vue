@@ -1,6 +1,10 @@
 <template>
   <div class="products-index">
-    <header class="page-header dark bg-img" style="background-image: url(/assets/images/page-dark.jpg)">
+    <header
+      class="page-header-sm dark bg-img"
+      style="background-image: url(/assets/images/page-dark.jpg)"
+      height="200px"
+    >
       <div class="container">
         <h1 class="page-title mb-15">Products</h1>
         <nav class="breadcrumb p-y-0 p-x-0" data-aos="fade-right">
@@ -80,6 +84,7 @@
                   <p class="mt-10 mb-0 fs-14">
                     {{ product.category.name }}
                   </p>
+                  <p class="btn btn-xs btn-info-light m-y-5 mr-5" v-if="product.trade == true">Willing to trade!</p>
                   <p class="m-y-5 badge badge-pill badge-danger" v-if="product.sold == true">Sold</p>
                   <p class="fs-16 bt-1 border-faded pt-15 mt-20 mb-0">
                     <span class="pull-right">

@@ -34,6 +34,7 @@
               <p class="m-y-5 badge badge-pill badge-danger" v-if="product.sold == true">Sold</p>
 
               <p class="fs-18 mb-15">Condition: {{ product.condition }}</p>
+              <p class="btn btn-xs btn-info-light m-y-5 mr-5" v-if="product.trade == true">Willing to trade!</p>
               <p class="lead m-y-40">
                 {{ product.description }}
               </p>

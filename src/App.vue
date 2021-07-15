@@ -2,7 +2,9 @@
   <div id="app">
     <nav class="navbar navbar-expand-lg navbar-light bg-white-frosted z-index-6">
       <div class="container">
-        <router-link class="navbar-brand" to="/"><img src="/assets/images/babuy.png" alt="babuy" /></router-link>
+        <router-link class="navbar-brand-sm" to="/">
+          <img src="/assets/images/babuy.png" width="100px" height="50px" alt="babuy" />
+        </router-link>
 
         <div class="collapse navbar-collapse" id="navbar-1">
           <ul class="navbar-nav ml-auto">

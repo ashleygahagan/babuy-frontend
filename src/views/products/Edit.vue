@@ -67,16 +67,15 @@
                     <div class="form-group">
                       <select
                         class="btn btn-outline-primary has-split-dropdown"
-                        v-bind:value="editProductParams.category_id"
+                        v-bind:value="editProductParams.category.id"
                         name="category"
-                        v-model="editProductParams.category_id"
+                        v-model="editProductParams.category.id"
                         id="select"
                         data-bs-toggle="dropdown"
                         aria-haspopup="true"
                         aria-expanded="true"
                       >
                         Catgeory
-                        <option value="">Select Category</option>
                         <option value="1">Strollers</option>
                         <option value="2">Car Seats</option>
                         <option value="3">Furniture</option>
@@ -105,7 +104,6 @@
                         aria-expanded="true"
                       >
                         Condition
-                        <option>Select Conditon</option>
                         <option value="New">New</option>
                         <option value="Gently Used">Gently Used</option>
                         <option value="Used">Used</option>

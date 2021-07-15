@@ -8,7 +8,7 @@
     >
       <div class="overlay-lighter"></div>
       <div class="container">
-        <div class="header-content xl">
+        <div class="header-content">
           <div class="row v-center">
             <div class="col-md-5 text-left tablet-top-45">
               <h2 class="title">babuy</h2>

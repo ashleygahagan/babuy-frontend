@@ -53,6 +53,7 @@
                     <img img v-if="product.product_images[0]" :src="`${product.product_images[0].url}`" alt="" />
                     <h6 class="mb-5">{{ product.title }}</h6>
                     <p class="fs-12 bt-1 border-faded pt-15 mt-20 mb-0"></p>
+                    <p class="m-y-5 badge badge-pill badge-danger" v-if="product.sold == true">Sold</p>
                   </router-link>
                 </div>
               </div>

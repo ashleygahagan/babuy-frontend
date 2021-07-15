@@ -75,6 +75,9 @@
 
                     <div class="col-md-12">
                       <div class="form-group">
+                        Catgeory:
+                        <br />
+                        <br />
                         <select
                           class="btn btn-outline-primary has-split-dropdown"
                           v-bind:value="newProductParams.category_id"
@@ -86,7 +89,7 @@
                           aria-expanded="true"
                         >
                           Catgeory
-                          <option value="">Select Category</option>
+                          <option value=""></option>
                           <option value="1">Strollers</option>
                           <option value="2">Car Seats</option>
                           <option value="3">Furniture</option>
@@ -104,6 +107,9 @@
                     </div>
                     <div class="col-md-12">
                       <div class="form-group">
+                        Condition:
+                        <br />
+                        <br />
                         <select
                           class="btn btn-outline-primary has-split-dropdown"
                           v-bind:value="newProductParams.condition"
@@ -115,7 +121,7 @@
                           aria-expanded="true"
                         >
                           Condition
-                          <option>Select Conditon</option>
+                          <option value=""></option>
                           <option value="New">New</option>
                           <option value="Gently Used">Gently Used</option>
                           <option value="Used">Used</option>
